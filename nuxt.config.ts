@@ -59,18 +59,13 @@ module.exports = {
       }
     }
   },
-  // generate: {
-  //   routes: [
-  //     'detail/1',
-  //     'detail/2',
-  //     'detail/3'
-  //   ]
-  // },
-  routes() {
-    return [
-      'detail/1',
-      'detail/2',
-      'detail/3'
+  router: {
+    base: '/'
+  },
+  generate: {
+    // fallback: true,
+    routes: [
+      '/detail/1'
     ]
-  }
+  },
 }
