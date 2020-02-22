@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="this.imageSrc" v-on:error="errorSrc" :alt="setAlt()"> 
+    <img :src="this.imageSrc" v-on:error="errorSrc" :alt="setAlt()" />
   </div>
 </template>
 
@@ -8,43 +8,43 @@
 export default {
   data() {
     return {
-      content:'content',
+      content: "content",
       imageSrc: null
-    }
+    };
   },
   created() {
-    this.imageSrc = this.setSrc()
+    this.imageSrc = this.setSrc();
   },
-  props:{
+  props: {
     imageId: {
       type: String,
-      required: true,
+      required: true
     },
     imageType: {
       type: String,
-      required: true,
+      required: true
     },
     gameTitle: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   mounted() {},
-  methods:{
-    setSrc(){
-      this.imageSrc = require(`@/assets/images/${this.imageType}/${this.imageId}.jpg`);
+  methods: {
+    setSrc() {
+      this.imageSrc = require(`@/static/images/${this.imageType}/${this.imageId}.jpg`);
       return this.imageSrc;
     },
-    errorSrc(){
-      this.imageSrc = require(`@/assets/images/${this.imageType}/error.jpg`);
+    errorSrc() {
+      this.imageSrc = require(`@/static/images/${this.imageType}/error.jpg`);
     },
-    setAlt(){
-      if(this.imageType === 'icon') return this.gameTitle + 'のアイコン'
-      if(this.imageType === 'banner') return this.gameTitle + 'のバナー'
-      return this.gameTitle + 'の画像'
+    setAlt() {
+      if (this.imageType === "icon") return this.gameTitle + "のアイコン";
+      if (this.imageType === "banner") return this.gameTitle + "のバナー";
+      return this.gameTitle + "の画像";
     }
   }
-}
+};
 </script>
 <style scoped lang="css">
 .iconImage img {

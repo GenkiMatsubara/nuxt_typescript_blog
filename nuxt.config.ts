@@ -1,11 +1,12 @@
 import { Configuration } from 'webpack'
 import { Context } from '@nuxt/vue-app'
- 
+
 const pkg = require('./package')
- 
+const post_data = require('@/static/json/data.json')
+
 module.exports = {
   mode: 'universal',
- 
+
   /*
   ** Headers of the page
   */
@@ -20,30 +21,30 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
- 
+
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
- 
+
   /*
   ** Global CSS
   */
   css: [
   ],
- 
+
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
   ],
- 
+
   /*
   ** Nuxt.js modules
   */
   modules: [
   ],
- 
+
   /*
   ** Build configuration
   */
@@ -51,10 +52,25 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend (config: Configuration, { isClient, isDev }: Context) {
+    extend(config: Configuration, { isClient, isDev }: Context) {
+      console.info('=============================================');
       if (isClient && isDev) {
         config.devtool = 'source-map'
       }
     }
+  },
+  // generate: {
+  //   routes: [
+  //     'detail/1',
+  //     'detail/2',
+  //     'detail/3'
+  //   ]
+  // },
+  routes() {
+    return [
+      'detail/1',
+      'detail/2',
+      'detail/3'
+    ]
   }
 }
