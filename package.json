@@ -1,0 +1,29 @@
+{
+  "name": "catch-up-nuxt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/webpack": "^4.41.6",
+    "nuxt-ts": "^2.8.1",
+    "vue-meta": "^2.3.2",
+    "vue-property-decorator": "^8.4.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript": "^2.8.1",
+    "tslint-config-standard": "^9.0.0"
+  },
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint": "tslint --project"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.dena.jp:genki-matsubara/catch-up-nuxt.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
