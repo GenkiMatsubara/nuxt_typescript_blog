@@ -3,3 +3,4 @@
 - nuxt.js
 - TypeScript
 - AWS
+- S3
