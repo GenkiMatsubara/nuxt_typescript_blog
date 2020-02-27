@@ -1,8 +1,14 @@
 import { Configuration } from 'webpack'
 import { Context } from '@nuxt/vue-app'
-
 const pkg = require('./package')
-const post_data = require('@/static/json/data.json')
+
+const data = require('./static/storedata.json');
+let dynamicRoutes = () => {
+  return new Promise(resolve => {
+    resolve(data.map(el => `detail/${el.id}`))
+  })
+}
+
 
 module.exports = {
   mode: 'universal',
@@ -52,20 +58,10 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config: Configuration, { isClient, isDev }: Context) {
-      console.info('=============================================');
-      if (isClient && isDev) {
-        config.devtool = 'source-map'
-      }
-    }
-  },
-  router: {
-    base: '/'
+    extend(config, ctx) {}
   },
   generate: {
     // fallback: true,
-    routes: [
-      '/detail/1'
-    ]
+    routes: dynamicRoutes
   },
 }

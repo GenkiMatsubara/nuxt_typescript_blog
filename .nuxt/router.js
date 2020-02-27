@@ -2,9 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _9b21d2fc = () => interopDefault(import('../pages/detail/index.vue' /* webpackChunkName: "pages/detail/index" */))
-const _67165d2c = () => interopDefault(import('../pages/detail/_id.vue' /* webpackChunkName: "pages/detail/_id" */))
-const _5952a258 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _127b9a38 = () => interopDefault(import('../pages/detail/_id.vue' /* webpackChunkName: "pages/detail/_id" */))
 
 Vue.use(Router)
 
@@ -81,17 +79,9 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/detail",
-      component: _9b21d2fc,
-      name: "detail"
-    }, {
-      path: "/detail/:id",
-      component: _67165d2c,
+      path: "/detail/:id?",
+      component: _127b9a38,
       name: "detail-id"
-    }, {
-      path: "/",
-      component: _5952a258,
-      name: "index"
     }],
 
     fallback: false
