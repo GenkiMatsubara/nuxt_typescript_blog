@@ -1,20 +1,16 @@
 <template>
   <div class="imageList clearfix">
     <h1>topだよ</h1>
+    <Cards />
     <div class="img_box">
       <SetImage :src="'top_bg.png'" :alt="'トップ画像'" />
     </div>
-    <div>
-      <div style="background:orange" class="box">テック</div>
-      <div style="background:#399cea" class="box">LIFE</div>
-      <div style="background:#3fcc45" class="box">写真</div>
-      <div style="background:#e64444" class="box">旅</div>
-    </div>
+    <Cards />
   </div>
 </template>
 
 <script>
-import Content from "@/components/02_molecule/content.vue";
+import Cards from "@/components/02_molecule/cards.vue";
 import SetImage from "@/components/01_atom/setImage.vue";
 export default {
   data() {
@@ -23,7 +19,7 @@ export default {
     };
   },
   components: {
-    Content,
+    Cards,
     SetImage
   },
   created() {},
@@ -36,11 +32,6 @@ export default {
 };
 </script>
 <style scoped lang="css">
-.box {
-  float: left;
-  width: 25%;
-  height: 100%;
-}
 .img_box img {
   width: 100%;
 }

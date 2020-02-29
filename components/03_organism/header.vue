@@ -53,7 +53,7 @@ p {
 .box {
   font-size: 0.5em;
   float: left;
-  width: 150px;
+  width: 100px;
   height: 50%;
 }
 </style>
