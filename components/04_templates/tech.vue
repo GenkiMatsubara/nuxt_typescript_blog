@@ -4,9 +4,9 @@
     {{pageList}}
     <div v-for="(item, index) in pageList['fileMap']" :key="index">
       <br />
-      <div>{{item.title}}</div>
-      <br />
-      <div>{{item}}</div>
+      <n-link :to="`/tech/1`">
+        <div :on="consoleM(item)">{{item.title}}</div>
+      </n-link>
       <br />
     </div>
   </div>
@@ -20,7 +20,15 @@ export default {
       pageList: techPostList
     };
   },
-  components: {}
+  created() {
+    console.info(this.pageList);
+  },
+  components: {},
+  methods: {
+    consoleM: log => {
+      console.log(log);
+    }
+  }
 };
 </script>
 <style scoped lang="css">
