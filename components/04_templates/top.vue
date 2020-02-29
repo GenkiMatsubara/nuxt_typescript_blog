@@ -1,11 +1,15 @@
 <template>
   <div class="imageList clearfix">
     <h1>topだよ</h1>
+    <div>
+      <SetImage :src="'top_bg.png'" :alt="'トップ画像'" />
+    </div>
   </div>
 </template>
 
 <script>
 import Content from "@/components/02_molecule/content.vue";
+import SetImage from "@/components/01_atom/setImage.vue";
 export default {
   data() {
     return {
@@ -13,7 +17,8 @@ export default {
     };
   },
   components: {
-    Content
+    Content,
+    SetImage
   },
   created() {},
   mounted() {
