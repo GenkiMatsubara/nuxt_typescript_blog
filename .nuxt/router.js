@@ -3,8 +3,14 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 
 const _6ff812b1 = () => interopDefault(import('../pages/information/index.vue' /* webpackChunkName: "pages/information/index" */))
+const _09ec9e26 = () => interopDefault(import('../pages/life/index.vue' /* webpackChunkName: "pages/life/index" */))
+const _7a5ea3b7 = () => interopDefault(import('../pages/photo/index.vue' /* webpackChunkName: "pages/photo/index" */))
+const _10f5e7f2 = () => interopDefault(import('../pages/tech/index.vue' /* webpackChunkName: "pages/tech/index" */))
 const _0a34560b = () => interopDefault(import('../pages/travel/index.vue' /* webpackChunkName: "pages/travel/index" */))
 const _67165d2c = () => interopDefault(import('../pages/detail/_id.vue' /* webpackChunkName: "pages/detail/_id" */))
+const _35390a95 = () => interopDefault(import('../pages/life/_id.vue' /* webpackChunkName: "pages/life/_id" */))
+const _41e027df = () => interopDefault(import('../pages/photo/_id.vue' /* webpackChunkName: "pages/photo/_id" */))
+const _01b737a2 = () => interopDefault(import('../pages/tech/_id.vue' /* webpackChunkName: "pages/tech/_id" */))
 const _4b33419a = () => interopDefault(import('../pages/travel/_id.vue' /* webpackChunkName: "pages/travel/_id" */))
 const _5952a258 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -87,6 +93,18 @@ export function createRouter() {
       component: _6ff812b1,
       name: "information"
     }, {
+      path: "/life",
+      component: _09ec9e26,
+      name: "life"
+    }, {
+      path: "/photo",
+      component: _7a5ea3b7,
+      name: "photo"
+    }, {
+      path: "/tech",
+      component: _10f5e7f2,
+      name: "tech"
+    }, {
       path: "/travel",
       component: _0a34560b,
       name: "travel"
@@ -94,6 +112,18 @@ export function createRouter() {
       path: "/detail/:id?",
       component: _67165d2c,
       name: "detail-id"
+    }, {
+      path: "/life/:id",
+      component: _35390a95,
+      name: "life-id"
+    }, {
+      path: "/photo/:id",
+      component: _41e027df,
+      name: "photo-id"
+    }, {
+      path: "/tech/:id",
+      component: _01b737a2,
+      name: "tech-id"
     }, {
       path: "/travel/:id",
       component: _4b33419a,
