@@ -1,7 +1,7 @@
 <template>
-  <div class="footer">
-    <p>Genkiの旅ログ</p>
-  </div>
+  <footer class="footer">
+    <p>Genkiのブログ</p>
+  </footer>
 </template>
 
 <script>

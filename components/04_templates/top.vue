@@ -4,6 +4,12 @@
     <div>
       <SetImage :src="'top_bg.png'" :alt="'トップ画像'" />
     </div>
+    <div>
+      <div style="background:orange" class="box">テック</div>
+      <div style="background:#399cea" class="box">LIFE</div>
+      <div style="background:#3fcc45" class="box">写真</div>
+      <div style="background:#e64444" class="box">旅</div>
+    </div>
   </div>
 </template>
 
@@ -30,6 +36,11 @@ export default {
 };
 </script>
 <style scoped lang="css">
+.box {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
 .imageList {
   margin-top: 120px;
 }
