@@ -5,8 +5,8 @@
   "bodyContent": "# マークダウンを使ってよみう3\n\n## h2タグだよ3\n\n### h3タグだよ3\n\ntexttexttexttexttexttexttexttexttexttext\ntexttexttexttexttexttexttexttext\ntexttexttexttexttexttext\ntexttexttexttext\n\n改行タグ不要な設定",
   "bodyHtml": "<h1>マークダウンを使ってよみう3</h1>\n<h2>h2タグだよ3</h2>\n<h3>h3タグだよ3</h3>\n<p>texttexttexttexttexttexttexttexttexttext\ntexttexttexttexttexttexttexttext\ntexttexttexttexttexttext\ntexttexttexttext</p>\n<p>改行タグ不要な設定</p>\n",
   "dir": "static/json/life",
-  "base": "life3.json",
+  "base": "3.json",
   "ext": ".json",
-  "sourceBase": "life3.md",
+  "sourceBase": "3.md",
   "sourceExt": ".md"
 }

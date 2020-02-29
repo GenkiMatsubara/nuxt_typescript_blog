@@ -2,13 +2,11 @@
   <div>
     <h1>{{savePath}}</h1>
     <p>技術記事リスト</p>
-    <div v-for="(item, index) in pageData" :key="index">
-      <!-- <n-link :to="setPath(item)">
-        <div>{{item}}</div>
-      </n-link>-->
-      {{item}}
+    <div v-for="(item, index) in setPageData[1]" :key="index">
+      <br />
+      <h2>{{item.title}}</h2>
+      <h2>{{item}}</h2>
     </div>
-    {{setPageData}}
   </div>
 </template>
 
@@ -28,36 +26,26 @@ export default {
     setPageData() {
       if (this.$route.path == "/tech") {
         this.pageData = techPostList["fileMap"];
-        return this.pageData;
+        return [this.$route.path, this.pageData];
       }
       if (this.$route.path == "/life") {
-        this.pageData = lifePostList;
-        return this.pageData;
+        this.pageData = lifePostList["fileMap"];
+        return [this.$route.path, this.pageData];
       }
       if (this.$route.path == "/photo") {
         this.pageData = photoPostList["fileMap"];
-        return this.pageData;
+        return [this.$route.path, this.pageData];
       }
       if (this.$route.path == "/travel") {
         this.pageData = travelPostList["fileMap"];
-        return this.pageData;
+        return [this.$route.path, this.pageData];
       }
     },
     savePath() {
       return this.$route.path;
     }
   },
-  methods: {
-    setPath: data => {
-      const localPath = this.path;
-      return (
-        "/" +
-        localPath.slice(1) +
-        "/" +
-        data.base.replace(localPath.slice(1), "").replace(".json", "")
-      );
-    }
-  }
+  methods: {}
 };
 </script>
 <style scoped lang="css">

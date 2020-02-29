@@ -5,8 +5,8 @@
   "bodyContent": "# マークダウンを使ってよみう1\n\n## h2タグだよ1\n\n### h3タグだよ1\n\ntexttexttexttexttexttexttexttexttexttext\ntexttexttexttexttexttexttexttext\ntexttexttexttexttexttext\ntexttexttexttext\n\n改行タグ不要な設定",
   "bodyHtml": "<h1>マークダウンを使ってよみう1</h1>\n<h2>h2タグだよ1</h2>\n<h3>h3タグだよ1</h3>\n<p>texttexttexttexttexttexttexttexttexttext\ntexttexttexttexttexttexttexttext\ntexttexttexttexttexttext\ntexttexttexttext</p>\n<p>改行タグ不要な設定</p>\n",
   "dir": "static/json/travel",
-  "base": "travel1.json",
+  "base": "1.json",
   "ext": ".json",
-  "sourceBase": "travel1.md",
+  "sourceBase": "1.md",
   "sourceExt": ".md"
 }
