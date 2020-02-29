@@ -63,30 +63,33 @@ module.exports = {
   generate: {
     routes() {
       let allRoutes = [];
-
-      const techRoutes = techPostData.map(item => {
-        return `tech/${ item.id }`
+      const techRoutes = techPostData['sourceFileArray'].map(item => {
+        const techId = item.replace('assets/md/tech/', '').replace('.md', '')
+        return `tech/${ techId }`;
       })
       techRoutes.forEach(element => {
         allRoutes.push(element)
       });
 
-      const lifeRoutes = lifePostData.map(item => {
-        return `life/${ item.id }`
+      const lifeRoutes = lifePostData['sourceFileArray'].map(item => {
+        const lifeId = item.replace('assets/md/life/', '').replace('.md', '')
+        return `life/${ lifeId }`;
       })
       lifeRoutes.forEach(element => {
         allRoutes.push(element)
       });
 
-      const photoRoutes = photoPostData.map(item => {
-        return `photo/${ item.id }`
+      const photoRoutes = photoPostData['sourceFileArray'].map(item => {
+        const photoId = item.replace('assets/md/photo/', '').replace('.md', '')
+        return `photo/${ photoId }`;
       })
       photoRoutes.forEach(element => {
         allRoutes.push(element)
       });
 
-      const travelRoutes = travelPostData.map(item => {
-        return `travel/${ item.id }`
+      const travelRoutes = travelPostData['sourceFileArray'].map(item => {
+        const travelId = item.replace('assets/md/travel/', '').replace('.md', '')
+        return `travel/${ travelId }`;
       })
       travelRoutes.forEach(element => {
         allRoutes.push(element)
