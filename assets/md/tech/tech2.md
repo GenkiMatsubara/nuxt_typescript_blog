@@ -46,45 +46,45 @@ nodebrewをインストールするには[homebrew](https://brew.sh/index_ja)を
 ```
 brew install nodebrew
 ```
-##2 - yarnをインストール
+## 2 - yarnをインストール
 
 ```
 brew install yarn
 ```
-##3 - npm init (npmを使うための設定)
+## 3 - npm init (npmを使うための設定)
 ```
 npm init
 ```
-##4 - srcファイルを作成
+## 4 - srcファイルを作成
 ```
 mkdir src
 ```
-##5 - distファイルを作成
+## 5 - distファイルを作成
 ```
 mkdir dist
 ```
-##6 - gulpfile.jsを作成
+## 6 - gulpfile.jsを作成
 ```
 touch gulpfile.js
 ```
-##7 - gulpをインストール
+## 7 - gulpをインストール
 ```
 npm install gulp
 ```
-##8 - imageminをインストール
+## 8 - imageminをインストール
 
 [imagemin](https://www.npmjs.com/package/gulp-imagemin)
 
 ```
 npm i gulp-imagemin
 ```
-##9 - imagemin-mozjpegをインストール
+## 9 - imagemin-mozjpegをインストール
 [imagemin-mozjpeg](https://www.npmjs.com/package/imagemin-mozjpeg)
 
 ```
 npm i imagemin-mozjpeg
 ```
-##10 - imagemin-pngquantをインストール
+## 10 - imagemin-pngquantをインストール
 
 [imagemin-pngquant](https://www.npmjs.com/package/imagemin-pngquant)
 
@@ -92,7 +92,7 @@ npm i imagemin-mozjpeg
 npm i imagemin-pngquant
 ```
 
-##ここまで実行するとこのようなディレクトリ構造になっています。
+ここまで実行するとこのようなディレクトリ構造になっています。
 
 
 <img width="409" alt="スクリーンショット 2019-02-09 17.35.34.png" src="https://qiita-image-store.s3.amazonaws.com/0/199085/1b1523f4-4bdc-e7e4-d581-fcf16f6e8509.png">
@@ -108,7 +108,7 @@ npm i imagemin-pngquant
 
 
 
-##11 - gulpfile.jsに下記をコピぺする
+## 11 - gulpfile.jsに下記をコピぺする
 ```gulpfile.js
 const gulp = require('gulp');
 const distDir = 'dist';
@@ -133,13 +133,13 @@ gulp.task('img', () => {
 });
 ```
 
-##実行
+## 実行
 ```
 gulp img
 ```
-###png画像を圧縮
+### png画像を圧縮
 
-####圧縮前 (37KB)
+#### 圧縮前 (37KB)
 
 
 ![test.png](https://qiita-image-store.s3.amazonaws.com/0/199085/aea5a96c-8fe3-9cae-69e2-a76890232e1d.png)
@@ -151,13 +151,13 @@ gulp-imagemin: Minified 1 image (saved 25 kB - 67%)
 Finished 'img' after 527 ms
 ```
 
-####圧縮後 (12KB)
+#### 圧縮後 (12KB)
 ![test.png](https://qiita-image-store.s3.amazonaws.com/0/199085/14039952-73fb-1b0f-bb63-7a9d4f5146a0.png)
 
 ###jpg画像を圧縮
 スマホで撮った写真を圧縮してみる。
 
-####圧縮前 (1.9MB)
+#### 圧縮前 (1.9MB)
 
 
 ![test.jpg](https://qiita-image-store.s3.amazonaws.com/0/199085/ed453547-6e43-01ef-afa3-8e6a81c2201b.jpeg)
@@ -171,11 +171,11 @@ gulp-imagemin: Minified 1 image (saved 25 kB - 67%)
 Finished 'img' after 571 ms
 ```
 
-####圧縮後 (1.2MB)
+#### 圧縮後 (1.2MB)
 
 ![test.jpg](https://qiita-image-store.s3.amazonaws.com/0/199085/69530871-5b4e-1b28-64ed-06d9c79aed45.jpeg)
 
-##まとめ
+## まとめ
 画像容量を6割近く削減することができました。
 デザイナーではない素人目ですが画像の劣化などあまり気になりませんでした。
 

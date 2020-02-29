@@ -1,10 +1,9 @@
 <template>
   <div>
-    <p>テックのリスト</p>
-    {{pageList}}
+    <p>テックの記事リスト</p>
     <div v-for="(item, index) in pageList['fileMap']" :key="index">
       <br />
-      <n-link :to="`/tech/1`">
+      <n-link :to="path(item)">
         <div :on="consoleM(item)">{{item.title}}</div>
       </n-link>
       <br />
@@ -27,6 +26,10 @@ export default {
   methods: {
     consoleM: log => {
       console.log(log);
+    },
+    path: data => {
+      console.log(data);
+      return `/tech/` + data.base.replace(".json", "");
     }
   }
 };
