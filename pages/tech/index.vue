@@ -1,12 +1,12 @@
 <template>
   <div>
     <h1>tech</h1>
-    <ContentList />
+    <Tech />
   </div>
 </template>
 
 <script>
-import ContentList from "@/components/04_templates/contentList.vue";
+import Tech from "@/components/04_templates/tech.vue";
 
 export default {
   data() {
@@ -16,7 +16,7 @@ export default {
   },
   created() {},
   components: {
-    ContentList
+    Tech
   }
 };
 </script>

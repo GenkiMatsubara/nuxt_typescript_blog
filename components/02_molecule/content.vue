@@ -2,11 +2,13 @@
   <div class="content">
     <h2>{{this.contentData.title}}</h2>
     <n-link :to="`/travel/${this.contentData.id}`">
-      <setIcon
+      <p>{{this.contentData.id}}</p>
+      <p>{{this.contentData.title}}</p>
+      <!-- <setIcon
         :imageId="this.contentData.id"
         :imageType="'icon'"
         :gameTitle="this.contentData.title"
-      />
+      />-->
     </n-link>
   </div>
 </template>
