@@ -24,7 +24,10 @@
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint": "tslint --project",
-    "md": "processmd static/md/tech/*.{yml,md} --outputDir output > static/tech.json"
+    "mdte": "processmd assets/md/tech/*.{yml,md} --stdout --outputDir output > static/tech.json",
+    "mdli": "processmd assets/md/life/*.{yml,md} --stdout --outputDir output > static/life.json",
+    "mdph": "processmd assets/md/life/*.{yml,md} --stdout --outputDir output > static/photo.json",
+    "mdtr": "processmd assets/md/life/*.{yml,md} --stdout --outputDir output > static/travel.json"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,12 @@
+{
+  "title": "タイトル",
+  "created_at": "2020-03-01T00:00:00.000Z",
+  "image": "img1.jpg",
+  "bodyContent": "# マークダウンを使ってよみう1\n\n## h2タグだよ1\n\n### h3タグだよ1\n\ntexttexttexttexttexttexttexttexttexttext\ntexttexttexttexttexttexttexttext\ntexttexttexttexttexttext\ntexttexttexttext\n\n改行タグ不要な設定",
+  "bodyHtml": "<h1>マークダウンを使ってよみう1</h1>\n<h2>h2タグだよ1</h2>\n<h3>h3タグだよ1</h3>\n<p>texttexttexttexttexttexttexttexttexttext\ntexttexttexttexttexttexttexttext\ntexttexttexttexttexttext\ntexttexttexttext</p>\n<p>改行タグ不要な設定</p>\n",
+  "dir": "output",
+  "base": "tech_1.json",
+  "ext": ".json",
+  "sourceBase": "tech_1.md",
+  "sourceExt": ".md"
+}
