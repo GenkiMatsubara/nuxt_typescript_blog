@@ -1,7 +1,7 @@
 <template>
   <div class="imageList clearfix">
     <div class="contentArea clearfix" v-for="(data, index) in mainData" :key="index">
-      <Content :contentData="data" />
+      <!-- <Content :contentData="data" /> -->
     </div>
   </div>
 </template>

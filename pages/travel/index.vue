@@ -1,9 +1,9 @@
 <template>
-  <ContentList />
+  <Categorie />
 </template>
 
 <script>
-import ContentList from "@/components/04_templates/contentList.vue";
+import Categorie from "@/components/04_templates/categorie.vue";
 
 export default {
   data() {
@@ -13,7 +13,7 @@ export default {
   },
   created() {},
   components: {
-    ContentList
+    Categorie
   }
 };
 </script>

@@ -1,12 +1,12 @@
 <template>
   <div>
     <h1>tech</h1>
-    <Tech />
+    <Categorie />
   </div>
 </template>
 
 <script>
-import Tech from "@/components/04_templates/tech.vue";
+import Categorie from "@/components/04_templates/categorie.vue";
 
 export default {
   data() {
@@ -16,7 +16,7 @@ export default {
   },
   created() {},
   components: {
-    Tech
+    Categorie
   }
 };
 </script>
