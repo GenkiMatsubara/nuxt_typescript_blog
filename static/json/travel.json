@@ -10,16 +10,6 @@
       "sourceBase": "travel1.md",
       "sourceExt": ".md"
     },
-    "static/json/travel/travel3.json": {
-      "title": "タイトル3",
-      "created_at": "2020-03-01T00:00:00.000Z",
-      "image": "img1.jpg",
-      "dir": "static/json/travel",
-      "base": "travel3.json",
-      "ext": ".json",
-      "sourceBase": "travel3.md",
-      "sourceExt": ".md"
-    },
     "static/json/travel/travel2.json": {
       "title": "タイトル2",
       "created_at": "2020-03-01T00:00:00.000Z",
@@ -28,6 +18,16 @@
       "base": "travel2.json",
       "ext": ".json",
       "sourceBase": "travel2.md",
+      "sourceExt": ".md"
+    },
+    "static/json/travel/travel3.json": {
+      "title": "タイトル3",
+      "created_at": "2020-03-01T00:00:00.000Z",
+      "image": "img1.jpg",
+      "dir": "static/json/travel",
+      "base": "travel3.json",
+      "ext": ".json",
+      "sourceBase": "travel3.md",
       "sourceExt": ".md"
     }
   },

@@ -10,16 +10,6 @@
       "sourceBase": "photo3.md",
       "sourceExt": ".md"
     },
-    "static/json/photo/photo2.json": {
-      "title": "タイトル2",
-      "created_at": "2020-03-01T00:00:00.000Z",
-      "image": "img1.jpg",
-      "dir": "static/json/photo",
-      "base": "photo2.json",
-      "ext": ".json",
-      "sourceBase": "photo2.md",
-      "sourceExt": ".md"
-    },
     "static/json/photo/photo1.json": {
       "title": "タイトル",
       "created_at": "2020-03-01T00:00:00.000Z",
@@ -28,6 +18,16 @@
       "base": "photo1.json",
       "ext": ".json",
       "sourceBase": "photo1.md",
+      "sourceExt": ".md"
+    },
+    "static/json/photo/photo2.json": {
+      "title": "タイトル2",
+      "created_at": "2020-03-01T00:00:00.000Z",
+      "image": "img1.jpg",
+      "dir": "static/json/photo",
+      "base": "photo2.json",
+      "ext": ".json",
+      "sourceBase": "photo2.md",
       "sourceExt": ".md"
     }
   },

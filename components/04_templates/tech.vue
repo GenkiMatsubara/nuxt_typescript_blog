@@ -1,10 +1,10 @@
 <template>
   <div>
-    <p>テックの記事リスト</p>
+    <p>技術記事リスト</p>
     <div v-for="(item, index) in pageList['fileMap']" :key="index">
       <br />
       <n-link :to="path(item)">
-        <div :on="consoleM(item)">{{item.title}}</div>
+        <div>{{item.title}}</div>
       </n-link>
       <br />
     </div>
@@ -19,17 +19,10 @@ export default {
       pageList: techPostList
     };
   },
-  created() {
-    console.info(this.pageList);
-  },
   components: {},
   methods: {
-    consoleM: log => {
-      console.log(log);
-    },
     path: data => {
-      console.log(data);
-      return `/tech/` + data.base.replace(".json", "");
+      return `/tech/` + data.base.replace("tech", "").replace(".json", "");
     }
   }
 };
