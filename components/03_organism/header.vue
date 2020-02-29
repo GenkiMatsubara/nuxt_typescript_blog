@@ -10,9 +10,15 @@
       <p>Information</p>
     </n-link>
     <div>
-      <div style="background:orange" class="box">テック</div>
-      <div style="background:#399cea" class="box">LIFE</div>
-      <div style="background:#3fcc45" class="box">写真</div>
+      <n-link class="link" :to="'/tech'">
+        <div style="background:orange" class="box">テック</div>
+      </n-link>
+      <n-link class="link" :to="'/life'">
+        <div style="background:#399cea" class="box">LIFE</div>
+      </n-link>
+      <n-link class="link" :to="'/photo'">
+        <div style="background:#3fcc45" class="box">写真</div>
+      </n-link>
       <n-link class="link" :to="'/travel'">
         <div style="background:#e64444" class="box">旅</div>
       </n-link>

@@ -1,7 +1,7 @@
 <template>
   <div class="imageList clearfix">
     <h1>topだよ</h1>
-    <div>
+    <div class="img_box">
       <SetImage :src="'top_bg.png'" :alt="'トップ画像'" />
     </div>
     <div>
@@ -40,6 +40,9 @@ export default {
   float: left;
   width: 25%;
   height: 100%;
+}
+.img_box img {
+  width: 100%;
 }
 .imageList {
   margin-top: 120px;

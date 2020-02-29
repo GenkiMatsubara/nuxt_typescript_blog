@@ -1,6 +1,8 @@
 <template>
   <footer class="footer">
-    <p>Genkiのブログ</p>
+    <n-link class="link" :to="'/'">
+      <p>Genkiのブログ</p>
+    </n-link>
   </footer>
 </template>
 
