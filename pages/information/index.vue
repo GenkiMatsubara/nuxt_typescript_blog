@@ -1,14 +1,8 @@
 <template>
-  <div>
-    <Header />
-    <div v-html="$md.render(htmlData)"></div>
-    <Footer />
-  </div>
+  <div v-html="$md.render(htmlData)"></div>
 </template>
 
 <script>
-import Header from "@/components/03_organism/header.vue";
-import Footer from "@/components/03_organism/footer.vue";
 import mdInformation from "@/static/md/information.md";
 
 export default {
@@ -19,10 +13,7 @@ export default {
     };
   },
   created() {},
-  components: {
-    Header,
-    Footer
-  }
+  components: {}
 };
 </script>
 

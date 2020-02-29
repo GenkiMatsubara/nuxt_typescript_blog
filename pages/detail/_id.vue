@@ -1,6 +1,5 @@
 <template>
   <div class="wrapper">
-    <Header />
     <div class="contentArea">
       <div v-if="this.pageData.length > 0">
         <div v-for="(item, index) in this.pageData" :key="index">
@@ -21,15 +20,12 @@
         <n-link :to="'/'">TOPに戻る</n-link>
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
 import setIcons from "@/components/01_atom/setIcon.vue";
-import Header from "@/components/03_organism/header.vue";
 import ContentList from "@/components/04_templates/contentList.vue";
-import Footer from "@/components/03_organism/footer.vue";
 import mdInformation from "@/static/md/information.md";
 
 export default {
@@ -41,9 +37,7 @@ export default {
     };
   },
   components: {
-    Header,
-    setIcons,
-    Footer
+    setIcons
   },
   created() {
     this.pageData = this.mainData.filter(item => item.id === this.pageId);

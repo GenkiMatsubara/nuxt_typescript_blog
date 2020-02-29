@@ -1,14 +1,8 @@
 <template>
-  <div>
-    <Header />
-    <ContentList />
-    <Footer />
-  </div>
+  <ContentList />
 </template>
 
 <script>
-import Header from "@/components/03_organism/header.vue";
-import Footer from "@/components/03_organism/footer.vue";
 import ContentList from "@/components/04_templates/contentList.vue";
 
 export default {
@@ -19,8 +13,6 @@ export default {
   },
   created() {},
   components: {
-    Header,
-    Footer,
     ContentList
   }
 };
