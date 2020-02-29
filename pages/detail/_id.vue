@@ -7,7 +7,7 @@
           <p>{{item.description}}</p>
           <p>{{item.description}}</p>
           <p>{{item.description}}</p>
-          <setIcon :imageId="item.id" :imageType="'icon'" :gameTitle="item.title" />
+          <setIcons :imageId="item.id" :imageType="'icon'" :gameTitle="item.title" />
           <p>{{item.description}}</p>
           <p>{{item.description}}</p>
           <p>{{item.description}}</p>
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import setIcon from "@/components/01_atom/setIcon.vue";
+import setIcons from "@/components/01_atom/setIcon.vue";
 import ContentList from "@/components/04_templates/contentList.vue";
 import mdInformation from "@/static/md/information.md";
 
@@ -37,7 +37,7 @@ export default {
     };
   },
   components: {
-    setIcon
+    setIcons
   },
   created() {
     this.pageData = this.mainData.filter(item => item.id === this.pageId);

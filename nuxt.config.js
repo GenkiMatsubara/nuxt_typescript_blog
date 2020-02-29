@@ -2,12 +2,10 @@ import { Configuration } from 'webpack'
 import { Context } from '@nuxt/vue-app'
 const pkg = require('./package')
 
-const data = require('./static/json/travel/data.json');
-let dynamicRoutes = () => {
-  return new Promise(resolve => {
-    resolve(data.map(el => `detail/${ el.id }`))
-  })
-}
+const techPostData = require('./static/json/tech.json');
+const lifePostData = require('./static/json/life.json');
+const photoPostData = require('./static/json/photo.json');
+const travelPostData = require('./static/json/travel.json');
 
 module.exports = {
   mode: 'universal',
@@ -63,7 +61,38 @@ module.exports = {
   build: {
   },
   generate: {
-    // fallback: true,
-    routes: dynamicRoutes
+    routes() {
+      let allRoutes = [];
+
+      const techRoutes = techPostData.map(item => {
+        return `tech/${ item.id }`
+      })
+      techRoutes.forEach(element => {
+        allRoutes.push(element)
+      });
+
+      const lifeRoutes = lifePostData.map(item => {
+        return `life/${ item.id }`
+      })
+      lifeRoutes.forEach(element => {
+        allRoutes.push(element)
+      });
+
+      const photoRoutes = photoPostData.map(item => {
+        return `photo/${ item.id }`
+      })
+      photoRoutes.forEach(element => {
+        allRoutes.push(element)
+      });
+
+      const travelRoutes = travelPostData.map(item => {
+        return `travel/${ item.id }`
+      })
+      travelRoutes.forEach(element => {
+        allRoutes.push(element)
+      });
+
+      return allRoutes;
+    }
   },
 }

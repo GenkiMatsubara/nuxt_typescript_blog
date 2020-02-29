@@ -31,7 +31,7 @@ import mdInformation from "@/static/md/information.md";
 export default {
   data() {
     return {
-      mainData: require("@/static/json/travel/data.json"),
+      mainData: require("@/static/json/travel.json"),
       pageId: this.$route.params.id,
       pageData: null
     };

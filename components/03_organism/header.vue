@@ -41,9 +41,6 @@ export default {
 .header {
   width: 100%;
   height: 70px;
-  position: absolute;
-  top: 0;
-  text-align: center;
   background: #0a58a8;
   color: aliceblue;
   font-size: 2em;

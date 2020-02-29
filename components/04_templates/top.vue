@@ -19,7 +19,7 @@ import SetImage from "@/components/01_atom/setImage.vue";
 export default {
   data() {
     return {
-      mainData: require("@/static/json/travel/data.json")
+      mainData: require("@/static/json/travel.json")
     };
   },
   components: {
