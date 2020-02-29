@@ -25,9 +25,10 @@
     "generate": "nuxt-ts generate",
     "lint": "tslint --project",
     "mdte": "processmd assets/md/tech/*.{yml,md} --stdout --outputDir static/json/tech > static/json/tech.json",
-    "mdli": "processmd assets/md/life/*.{yml,md} --stdout --outputDir output > static/json/life > static/life.json",
-    "mdph": "processmd assets/md/life/*.{yml,md} --stdout --outputDir static/json/photo > static/photo.json",
-    "mdtr": "processmd assets/md/life/*.{yml,md} --stdout --outputDir static/json/travel > static/travel.json"
+    "mdli": "processmd assets/md/life/*.{yml,md} --stdout --outputDir static/json/life > static/life/life.json",
+    "mdph": "processmd assets/md/life/*.{yml,md} --stdout --outputDir static/json/photo > static/photo/photo.json",
+    "mdtr": "processmd assets/md/life/*.{yml,md} --stdout --outputDir static/json/travel > static/travel/travel.json",
+    "md": "npm run mdte && npm run mdli && npm run mdph && npm run mdtr"
   },
   "repository": {
     "type": "git",
