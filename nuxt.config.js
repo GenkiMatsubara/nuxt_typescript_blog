@@ -2,12 +2,19 @@ import { Configuration } from 'webpack'
 import { Context } from '@nuxt/vue-app'
 const pkg = require('./package')
 
-const data = require('./static/storedata.json');
+const data = require('./static/json/data.json');
 let dynamicRoutes = () => {
   return new Promise(resolve => {
-    resolve(data.map(el => `detail/${el.id}`))
+    resolve(data.map(el => `detail/${ el.id }`))
   })
 }
+
+// import data from './static/json/data.json';
+// let dynamicRoutes = () => {
+//   return new Promise(resolve => {
+//     resolve(data.map(el => `product/${el.id}`))
+//   })
+// }
 
 
 module.exports = {
@@ -56,10 +63,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) { }
   },
   generate: {
     // fallback: true,
