@@ -12,6 +12,7 @@ let dynamicRoutes = () => {
 
 module.exports = {
   mode: 'universal',
+  buildModules: ['@nuxt/typescript-build'],
 
   /*
   ** Headers of the page
@@ -58,7 +59,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   },
   generate: {
     // fallback: true,
