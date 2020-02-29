@@ -2,7 +2,7 @@ import { Configuration } from 'webpack'
 import { Context } from '@nuxt/vue-app'
 const pkg = require('./package')
 
-const data = require('./static/json/data.json');
+const data = require('./static/json/travel/data.json');
 let dynamicRoutes = () => {
   return new Promise(resolve => {
     resolve(data.map(el => `detail/${ el.id }`))

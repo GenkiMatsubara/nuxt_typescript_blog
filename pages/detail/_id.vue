@@ -8,7 +8,7 @@
           <p>{{item.description}}</p>
           <p>{{item.description}}</p>
           <p>{{item.description}}</p>
-          <setIcon :imageId="item.id" :imageType="'icon'" :gameTitle="item.title" />
+          <setIcons :imageId="item.id" :imageType="'icon'" :gameTitle="item.title" />
           <p>{{item.description}}</p>
           <p>{{item.description}}</p>
           <p>{{item.description}}</p>
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import setIcon from "@/components/01_atom/setIcon.vue";
+import setIcons from "@/components/01_atom/setIcon.vue";
 import Header from "@/components/03_organism/header.vue";
 import ContentList from "@/components/04_templates/contentList.vue";
 import Footer from "@/components/03_organism/footer.vue";
@@ -42,7 +42,7 @@ export default {
   },
   components: {
     Header,
-    setIcon,
+    setIcons,
     Footer
   },
   created() {

@@ -9,7 +9,7 @@ import Content from "@/components/02_molecule/content.vue";
 export default {
   data() {
     return {
-      mainData: require("@/static/json/data.json")
+      mainData: require("@/static/json/travel/data.json")
     };
   },
   components: {

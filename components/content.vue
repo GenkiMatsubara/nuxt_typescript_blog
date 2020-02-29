@@ -2,7 +2,7 @@
   <div class="content">
     <h2>{{this.contentData.title}}</h2>
     <n-link :to="`/travel/${this.contentData.id}`">
-      <Images
+      <setIcons
         :imageId="this.contentData.id"
         :imageType="'icon'"
         :gameTitle="this.contentData.title"
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Images from "@/components/01_atom/setImage.vue";
+import setIcons from "@/components/01_atom/setIcon.vue";
 
 export default {
   data() {
@@ -21,7 +21,7 @@ export default {
     };
   },
   components: {
-    Images
+    setIcons
   },
   created() {},
   props: {
