@@ -1,33 +1,33 @@
 <template>
   <div>
     <Header />
-    <ContentList />
+    <Top />
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from "@/components/header.vue";
-import ContentList from "@/components/contentList.vue";
-import Footer from "@/components/footer.vue";
+import Header from "@/components/03_organism/header.vue";
+import Footer from "@/components/03_organism/footer.vue";
+import Top from "@/components/04_templates/top.vue";
+
 export default {
-  data(){
+  data() {
     return {
-      pageData:'index'
-    }
+      pageData: "index"
+    };
   },
-  created(){
-  },
+  created() {},
   components: {
     Header,
-    ContentList,
-    Footer
+    Footer,
+    Top
   }
 };
 </script>
 
 <style lang="css">
-body {
+* {
   margin: 0;
   padding: 0;
 }

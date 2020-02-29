@@ -26,40 +26,41 @@
 </template>
 
 <script>
-import Header from '@/components/header.vue';
-import contentList from '@/components/contentList.vue';
-import Footer from '@/components/footer.vue';
-import Images from "@/components/setImage.vue";
+import Images from "@/components/01_atom/setImage.vue";
+import Header from "@/components/03_organism/header.vue";
+import ContentList from "@/components/04_templates/contentList.vue";
+import Footer from "@/components/03_organism/footer.vue";
+import mdInformation from "@/static/md/information.md";
 
 export default {
-  data(){
+  data() {
     return {
-      mainData: require('@/static/json/data.json'),
+      mainData: require("@/static/json/data.json"),
       pageId: this.$route.params.id,
       pageData: null
-    }
+    };
   },
   components: {
     Header,
     Images,
     Footer
   },
-  created(){
+  created() {
     this.pageData = this.mainData.filter(item => item.id === this.pageId);
   },
-  methods:{}
+  methods: {}
 };
 </script>
 
 <style scoped lang='css'>
-.wrapper{
+.wrapper {
   min-width: 640px;
 }
 body {
   margin: 0;
   padding: 0;
 }
-.contentArea{
+.contentArea {
   margin-top: 120px;
   padding-top: 30px;
   padding-bottom: 30px;

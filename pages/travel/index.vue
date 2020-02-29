@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <div v-html="$md.render(htmlData)"></div>
+    <ContentList />
     <Footer />
   </div>
 </template>
@@ -9,25 +9,25 @@
 <script>
 import Header from "@/components/03_organism/header.vue";
 import Footer from "@/components/03_organism/footer.vue";
-import mdInformation from "@/static/md/information.md";
+import ContentList from "@/components/04_templates/contentList.vue";
 
 export default {
   data() {
     return {
-      pageData: "index",
-      htmlData: mdInformation
+      pageData: "index"
     };
   },
   created() {},
   components: {
     Header,
-    Footer
+    Footer,
+    ContentList
   }
 };
 </script>
 
 <style lang="css">
-body {
+* {
   margin: 0;
   padding: 0;
 }

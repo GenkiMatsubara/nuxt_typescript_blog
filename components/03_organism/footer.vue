@@ -1,29 +1,27 @@
 <template>
-  <div class="header">
+  <div class="footer">
     <p>Genkiの旅ログ</p>
   </div>
 </template>
 
 <script>
 export default {
-  data(){
+  data() {
     return {
-      headerData:'header'
-    }
+      footerData: "footer"
+    };
   },
-  created(){
-  },
-}
+  created() {}
+};
 </script>
 
 <style scoped lang="css">
-.header {
+.footer {
   width: 100%;
-  height: 120px;
-  position: absolute;
-  top: 0;
+  height: 70px;
+  padding-top: 1px;
   text-align: center;
-  background: black;
+  background: #0a58a8;
   color: aliceblue;
   font-size: 2em;
   font-family: fantasy;

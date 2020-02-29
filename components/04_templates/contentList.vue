@@ -7,25 +7,24 @@
 </template>
 
 <script>
-import Content from "@/components/content.vue";
+import Content from "@/components/02_molecule/content.vue";
 export default {
-  data(){
+  data() {
     return {
-      mainData: require('@/static/json/data.json'),
-    }
+      mainData: require("@/static/json/data.json")
+    };
   },
   components: {
     Content
   },
-  created(){},
-  mounted () {
+  created() {},
+  mounted() {
     this.readJSON();
   },
-  methods:{
-    readJSON() {
-    }
+  methods: {
+    readJSON() {}
   }
-}
+};
 </script>
 <style scoped lang="css">
 .imageList {
