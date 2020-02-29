@@ -9,18 +9,9 @@ let dynamicRoutes = () => {
   })
 }
 
-// import data from './static/json/data.json';
-// let dynamicRoutes = () => {
-//   return new Promise(resolve => {
-//     resolve(data.map(el => `product/${el.id}`))
-//   })
-// }
-
-
 module.exports = {
   mode: 'universal',
   buildModules: ['@nuxt/typescript-build'],
-
   /*
   ** Headers of the page
   */
@@ -57,8 +48,15 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/markdownit'
   ],
-
+  markdownit: {
+    injected: true,
+    breaks: true,
+    html: true,
+    linkify: true,
+    typography: true
+  },
   /*
   ** Build configuration
   */
