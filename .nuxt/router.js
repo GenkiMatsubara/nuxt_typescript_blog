@@ -2,7 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _127b9a38 = () => interopDefault(import('../pages/detail/_id.vue' /* webpackChunkName: "pages/detail/_id" */))
+const _6ff812b1 = () => interopDefault(import('../pages/information/index.vue' /* webpackChunkName: "pages/information/index" */))
+const _0a34560b = () => interopDefault(import('../pages/travel/index.vue' /* webpackChunkName: "pages/travel/index" */))
+const _67165d2c = () => interopDefault(import('../pages/detail/_id.vue' /* webpackChunkName: "pages/detail/_id" */))
+const _4b33419a = () => interopDefault(import('../pages/travel/_id.vue' /* webpackChunkName: "pages/travel/_id" */))
+const _5952a258 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -79,9 +83,25 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
+      path: "/information",
+      component: _6ff812b1,
+      name: "information"
+    }, {
+      path: "/travel",
+      component: _0a34560b,
+      name: "travel"
+    }, {
       path: "/detail/:id?",
-      component: _127b9a38,
+      component: _67165d2c,
       name: "detail-id"
+    }, {
+      path: "/travel/:id",
+      component: _4b33419a,
+      name: "travel-id"
+    }, {
+      path: "/",
+      component: _5952a258,
+      name: "index"
     }],
 
     fallback: false
