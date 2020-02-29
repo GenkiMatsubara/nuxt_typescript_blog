@@ -3,9 +3,11 @@
     <h1>{{savePath}}</h1>
     <p>技術記事リスト</p>
     <div v-for="(item, index) in setPageData[1]" :key="index">
-      <br />
-      <h2>{{item.title}}</h2>
-      <h2>{{item}}</h2>
+      <div>
+        <nuxt-link :to="setType(item)">
+          <h2>{{item.title}}</h2>
+        </nuxt-link>
+      </div>
     </div>
   </div>
 </template>
@@ -45,7 +47,15 @@ export default {
       return this.$route.path;
     }
   },
-  methods: {}
+  methods: {
+    setType(data) {
+      return (
+        data.dir.replace("static/json/", "") +
+        "/" +
+        data.base.replace(".json", "")
+      );
+    }
+  }
 };
 </script>
 <style scoped lang="css">
