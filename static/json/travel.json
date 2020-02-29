@@ -1,27 +1,39 @@
-[
-  {
-    "title": "日光ヒッチハイクの旅",
-    "description": "テストテストテストテストテストテストテストテスト",
-    "id": "1"
+{
+  "fileMap": {
+    "static/json/travel/travel3.json": {
+      "title": "タイトル3",
+      "created_at": "2020-03-01T00:00:00.000Z",
+      "image": "img1.jpg",
+      "dir": "static/json/travel",
+      "base": "travel3.json",
+      "ext": ".json",
+      "sourceBase": "travel3.md",
+      "sourceExt": ".md"
+    },
+    "static/json/travel/travel1.json": {
+      "title": "タイトル",
+      "created_at": "2020-03-01T00:00:00.000Z",
+      "image": "img1.jpg",
+      "dir": "static/json/travel",
+      "base": "travel1.json",
+      "ext": ".json",
+      "sourceBase": "travel1.md",
+      "sourceExt": ".md"
+    },
+    "static/json/travel/travel2.json": {
+      "title": "タイトル2",
+      "created_at": "2020-03-01T00:00:00.000Z",
+      "image": "img1.jpg",
+      "dir": "static/json/travel",
+      "base": "travel2.json",
+      "ext": ".json",
+      "sourceBase": "travel2.md",
+      "sourceExt": ".md"
+    }
   },
-  {
-    "title": "福島県をローカル線で巡る",
-    "description": "テストテストテストテストテストテストテストテスト",
-    "id": "2"
-  },
-  {
-    "title": "都内で眺めるバナナの木",
-    "description": "テストテストテストテストテストテストテストテスト",
-    "id": "3"
-  },
-  {
-    "title": "バーで食べる卵かけご飯",
-    "description": "テストテストテストテストテストテストテストテスト",
-    "id": "4"
-  },
-  {
-    "title": "お台場までチャリでいく",
-    "description": "テストテストテストテストテストテストテストテスト",
-    "id": "5"
-  }
-]
+  "sourceFileArray": [
+    "assets/md/travel/travel1.md",
+    "assets/md/travel/travel2.md",
+    "assets/md/travel/travel3.md"
+  ]
+}
