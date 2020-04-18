@@ -28,7 +28,7 @@ export default {
 </script>
 <style scoped lang="css">
 .imageList {
-  margin-top: 120px;
+  /* margin-top: 120px; */
 }
 .contentArea {
   float: left;

@@ -1,7 +1,7 @@
 <template>
   <PageTemplate>
     <div class="imageList clearfix">
-      <h1>topだよ</h1>
+      <!-- <h1>topだよ</h1> -->
       <Cards />
       <div class="img_box">
         <SetImage :src="'top_bg.png'" :alt="'トップ画像'" />
@@ -41,7 +41,7 @@ export default {
   width: 50%;
 }
 .imageList {
-  margin-top: 120px;
+  /* margin-top: 120px; */
 }
 .contentArea {
   float: left;

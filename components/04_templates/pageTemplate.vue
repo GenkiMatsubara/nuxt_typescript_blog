@@ -1,11 +1,18 @@
 <template>
   <div class>
     <Header />
+    <div class="mainImg">メインイメージ</div>
     <div class="main">
       <div class="content">
         <slot />
       </div>
-      <div class="sideBar">サイドバー</div>
+      <div class="sideBar">
+        <div class="titleContent">
+          <n-link class="link" :to="'/'">
+            <p>Genkiのブログ</p>
+          </n-link>
+        </div>
+      </div>
     </div>
     <Footer />
   </div>
@@ -28,15 +35,57 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+.mainImg {
+  width: 100%;
+  height: 300px;
+  background-color: goldenrod;
+}
 .main {
   width: 100%;
+  // max-width: 1280px;
   display: flex;
   .content {
-    width: calc(100% - 300px);
+    width: calc(100% - 300px - 32px);
+    margin: 0 16px;
   }
   .sideBar {
     background-color: aqua;
     width: 300px;
+  }
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 896px) {
+  .mainImg {
+    width: 100%;
+    height: 200px;
+  }
+  .main {
+    width: calc(100% - 32px);
+    margin: 0 16px;
+    display: block;
+    .content {
+      width: 100%;
+      margin: 0;
+    }
+    .sideBar {
+      width: 100%;
+    }
+  }
+}
+// SP
+@media (max-width: 480px) {
+  .main {
+    width: calc(100% - 32px);
+    margin: 0 16px;
+    display: block;
+    .content {
+      width: 100%;
+      margin: 0;
+    }
+    .sideBar {
+      width: 100%;
+    }
   }
 }
 </style>

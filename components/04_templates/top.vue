@@ -1,13 +1,22 @@
 <template>
   <PageTemplate>
     <div class="imageList clearfix">
-      <h1>topだよ</h1>
+      <!-- SnapWidget -->
+      <iframe
+        src="https://snapwidget.com/embed/815802"
+        class="snapwidget-widget"
+        allowtransparency="true"
+        frameborder="0"
+        scrolling="no"
+        style="border:none; overflow:hidden;  width:495px; height:990px">
+      </iframe>
+      <!-- <h1>topだよ</h1>
       <Cards />
       <div class="img_box">
-        <!-- <SetImage :src="'top_bg.png'" :alt="'トップ画像'" /> -->
+        <SetImage :src="'top_bg.png'" :alt="'トップ画像'" />
       </div>
       <Cards />
-    </div>
+    </div> -->
   </PageTemplate>
 </template>
 
@@ -41,7 +50,7 @@ export default {
   width: 100%;
 }
 .imageList {
-  margin-top: 120px;
+  /* margin-top: 120px; */
 }
 .contentArea {
   float: left;

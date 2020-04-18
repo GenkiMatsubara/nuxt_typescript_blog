@@ -1,7 +1,7 @@
 <template>
-  <PageTemplateiv>
+  <PageTemplate>
     <div v-html="$md.render(pageData.bodyContent)"></div>
-  </PageTemplateiv>
+  </PageTemplate>
 </template>
 
 <script>

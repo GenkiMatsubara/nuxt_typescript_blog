@@ -1,9 +1,7 @@
 <template>
   <PageTemplate>
-    <div>
-      <h1>tech</h1>
-      <Categorie />
-    </div>
+    <h1>tech</h1>
+    <Categorie />
   </PageTemplate>
 </template>
 

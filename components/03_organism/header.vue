@@ -6,7 +6,7 @@
           <p>Genkiのブログ</p>
         </n-link>
       </div>
-      <div class="boxLink">
+      <!-- <div class="boxLink">
         <n-link class="link" :to="'/tech'">
           <div style="background:orange" class="box">テック</div>
         </n-link>
@@ -19,7 +19,7 @@
         <n-link class="link" :to="'/travel'">
           <div style="background:#e64444" class="box">旅</div>
         </n-link>
-      </div>
+      </div>-->
     </div>
   </header>
 </template>
@@ -46,7 +46,7 @@ export default {
   padding-top: 10px;
   padding-bottom: 10px;
   .content {
-    max-width: 1180px;
+    max-width: 1280px;
     height: 100%;
     margin: 0 auto;
     color: aliceblue;
