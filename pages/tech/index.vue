@@ -1,13 +1,15 @@
 <template>
-  <PageTemplate>
+  <PageTemplate pageTopImg="tech.jpg">
     <h1>tech</h1>
     <Categorie />
+    <!-- <Cards /> -->
   </PageTemplate>
 </template>
 
 <script>
 import PageTemplate from "@/components/04_templates/pageTemplate.vue";
 import Categorie from "@/components/04_templates/categorie.vue";
+import Cards from "@/components/02_molecule/cards.vue";
 
 export default {
   data() {
@@ -18,7 +20,8 @@ export default {
   created() {},
   components: {
     Categorie,
-    PageTemplate
+    PageTemplate,
+    Cards
   }
 };
 </script>

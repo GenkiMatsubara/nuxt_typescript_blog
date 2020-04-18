@@ -69,12 +69,18 @@ export default {
   }
 }
 p {
-  float: left;
+  // float: left;
   margin-right: 20px;
   color: aliceblue;
 }
 .titleContent {
   width: 100%;
   height: 50px;
+}
+// タブ
+@media (max-width: 896px) {
+}
+// SP
+@media (max-width: 480px) {
 }
 </style>

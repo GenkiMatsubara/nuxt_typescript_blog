@@ -1,7 +1,9 @@
 <template>
   <div class>
     <Header />
-    <div class="mainImg">メインイメージ</div>
+    <div class="mainImg">
+      <SetImage :src="pageTopImg" :alt="'トップ画像'" />
+    </div>
     <div class="main">
       <div class="content">
         <slot />
@@ -21,15 +23,25 @@
 <script>
 import Header from "@/components/03_organism/header.vue";
 import Footer from "@/components/03_organism/footer.vue";
+import SetImage from "@/components/01_atom/setImage.vue";
 export default {
   data() {
     return {
       mainData: require("@/static/json/travel.json")
     };
   },
+  props: {
+    pageTopImg: {
+      type: String,
+      default: () => {
+        return "sample.jpg";
+      }
+    }
+  },
   components: {
     Header,
-    Footer
+    Footer,
+    SetImage
   },
   created() {}
 };
@@ -37,8 +49,8 @@ export default {
 <style scoped lang="scss">
 .mainImg {
   width: 100%;
-  height: 300px;
-  background-color: goldenrod;
+  // height: 300px;
+  // background-color: goldenrod;
 }
 .main {
   width: 100%;
@@ -58,7 +70,7 @@ export default {
 @media (max-width: 896px) {
   .mainImg {
     width: 100%;
-    height: 200px;
+    // height: 200px;
   }
   .main {
     width: calc(100% - 32px);
