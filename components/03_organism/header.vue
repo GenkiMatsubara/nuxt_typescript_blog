@@ -70,6 +70,7 @@ export default {
 }
 p {
   // float: left;
+  font-size: 36px;
   margin-right: 20px;
   color: aliceblue;
 }
@@ -79,8 +80,14 @@ p {
 }
 // タブ
 @media (max-width: 896px) {
+  p {
+    margin-left: 16px;
+  }
 }
 // SP
 @media (max-width: 480px) {
+  p {
+    font-size: 32px;
+  }
 }
 </style>

@@ -1,5 +1,14 @@
 <template>
   <PageTemplate>
+    <h3>ギャラリー</h3>
+    <iframe
+      src="https://snapwidget.com/embed/815802"
+      class="snapwidget-widget"
+      allowtransparency="true"
+      frameborder="0"
+      scrolling="no"
+      style="border:none; overflow:hidden;  width: 100%; height:990px;"
+    />
     <Categorie />
   </PageTemplate>
 </template>

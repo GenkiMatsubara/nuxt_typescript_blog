@@ -8,13 +8,7 @@
       <div class="content">
         <slot />
       </div>
-      <div class="sideBar">
-        <div class="titleContent">
-          <n-link class="link" :to="'/'">
-            <p>Genkiのブログ</p>
-          </n-link>
-        </div>
-      </div>
+      <SideBar class="sideBar" />
     </div>
     <Footer />
   </div>
@@ -23,6 +17,7 @@
 <script>
 import Header from "@/components/03_organism/header.vue";
 import Footer from "@/components/03_organism/footer.vue";
+import SideBar from "@/components/03_organism/sideBar.vue";
 import SetImage from "@/components/01_atom/setImage.vue";
 export default {
   data() {
@@ -41,7 +36,8 @@ export default {
   components: {
     Header,
     Footer,
-    SetImage
+    SetImage,
+    SideBar
   },
   created() {}
 };
