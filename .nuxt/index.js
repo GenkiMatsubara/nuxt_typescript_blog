@@ -10,7 +10,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_markdownit_450f5125 from 'nuxt_plugin_markdownit_450f5125' // Source: ./markdown-it.js (mode: 'all')
+import nuxt_plugin_markdownit_01eeef52 from 'nuxt_plugin_markdownit_01eeef52' // Source: ./markdown-it.js (mode: 'all')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -129,8 +129,8 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_markdownit_450f5125 === 'function') {
-    await nuxt_plugin_markdownit_450f5125(app.context, inject)
+  if (typeof nuxt_plugin_markdownit_01eeef52 === 'function') {
+    await nuxt_plugin_markdownit_01eeef52(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

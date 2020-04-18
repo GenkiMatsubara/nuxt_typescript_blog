@@ -1,8 +1,11 @@
 <template>
-  <div v-html="$md.render(htmlData)"></div>
+  <PageTemplate>
+    <div v-html="$md.render(htmlData)"></div>
+  </PageTemplate>
 </template>
 
 <script>
+import PageTemplate from "@/components/04_templates/pageTemplate.vue";
 import mdInformation from "@/static/md/information.md";
 
 export default {
@@ -13,7 +16,9 @@ export default {
     };
   },
   created() {},
-  components: {}
+  components: {
+    PageTemplate
+  }
 };
 </script>
 

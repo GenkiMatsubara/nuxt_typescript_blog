@@ -1,17 +1,21 @@
 <template>
-  <div class="imageList clearfix">
-    <h1>topだよ</h1>
-    <Cards />
-    <div class="img_box">
-      <SetImage :src="'top_bg.png'" :alt="'トップ画像'" />
+  <PageTemplate>
+    <div class="imageList clearfix">
+      <h1>topだよ</h1>
+      <Cards />
+      <div class="img_box">
+        <SetImage :src="'top_bg.png'" :alt="'トップ画像'" />
+      </div>
+      <Cards />
     </div>
-    <Cards />
-  </div>
+  </PageTemplate>
 </template>
 
 <script>
+import PageTemplate from "@/components/04_templates/pageTemplate.vue";
 import Cards from "@/components/02_molecule/cards.vue";
 import SetImage from "@/components/01_atom/setImage.vue";
+
 export default {
   data() {
     return {
@@ -19,6 +23,7 @@ export default {
     };
   },
   components: {
+    PageTemplate,
     Cards,
     SetImage
   },

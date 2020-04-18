@@ -1,23 +1,9 @@
 <template>
-  <div>
-    <Header />
-    <Nuxt class="layout_nuxt" />
-    <Footer />
-  </div>
+  <Nuxt class="layout_nuxt" />
 </template>
 
 <script>
-import Header from "@/components/03_organism/header.vue";
-import Footer from "@/components/03_organism/footer.vue";
-export default {
-  data() {
-    return {};
-  },
-  components: {
-    Header,
-    Footer
-  }
-};
+export default {};
 </script>
 <style>
 @media screen and (min-width: 480px) {
@@ -25,9 +11,5 @@ export default {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 }
 @media screen and (min-width: 1024px) {
-  .layout_nuxt {
-    max-width: 1024px;
-    margin: 0 auto;
-  }
 }
 </style>

@@ -1,8 +1,11 @@
 <template>
-  <Categorie />
+  <PageTemplate>
+    <Categorie />
+  </PageTemplate>
 </template>
 
 <script>
+import PageTemplate from "@/components/04_templates/pageTemplate.vue";
 import Categorie from "@/components/04_templates/categorie.vue";
 
 export default {
@@ -13,6 +16,7 @@ export default {
   },
   created() {},
   components: {
+    PageTemplate,
     Categorie
   }
 };

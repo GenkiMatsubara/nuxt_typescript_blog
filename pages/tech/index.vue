@@ -1,11 +1,14 @@
 <template>
-  <div>
-    <h1>tech</h1>
-    <Categorie />
-  </div>
+  <PageTemplate>
+    <div>
+      <h1>tech</h1>
+      <Categorie />
+    </div>
+  </PageTemplate>
 </template>
 
 <script>
+import PageTemplate from "@/components/04_templates/pageTemplate.vue";
 import Categorie from "@/components/04_templates/categorie.vue";
 
 export default {
@@ -16,7 +19,8 @@ export default {
   },
   created() {},
   components: {
-    Categorie
+    Categorie,
+    PageTemplate
   }
 };
 </script>

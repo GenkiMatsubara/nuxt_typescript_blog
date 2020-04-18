@@ -29,4 +29,11 @@ export default {
   font-family: fantasy;
   font-weight: bold;
 }
+
+p {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
 </style>
