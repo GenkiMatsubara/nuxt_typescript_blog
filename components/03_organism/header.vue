@@ -1,16 +1,12 @@
 <template>
   <header class="header">
     <div class="content">
-      <n-link class="link" :to="'/'">
-        <p>Genkiのブログ</p>
-      </n-link>
-      <n-link class="link" :to="'/travel'">
-        <p>travel</p>
-      </n-link>
-      <n-link class="link" :to="'/information'">
-        <p>Information</p>
-      </n-link>
-      <div>
+      <div class="titleContent">
+        <n-link class="link" :to="'/'">
+          <p>Genkiのブログ</p>
+        </n-link>
+      </div>
+      <div class="boxLink">
         <n-link class="link" :to="'/tech'">
           <div style="background:orange" class="box">テック</div>
         </n-link>
@@ -39,34 +35,46 @@ export default {
 };
 </script>
 
-<style scoped lang="css">
+<style scoped lang="scss">
 .header {
   width: 100%;
-  height: 70px;
+  height: auto;
   background: #0a58a8;
   color: aliceblue;
   font-size: 2em;
   font-weight: bold;
-}
-.content {
-  max-width: 1180px;
-  height: 100%;
-  margin: 0 auto;
-  color: aliceblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .content {
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    color: aliceblue;
+  }
+  .boxLink {
+    width: 100%;
+    height: 50px;
+    .box {
+      font-size: 0.5em;
+      float: left;
+      width: 24%;
+      // margin-left: 1%;
+      margin-right: 1%;
+      height: 30px;
+      // margin-top: 10px;
+      margin-right: 10px;
+      color: white;
+      text-align: center;
+    }
+  }
 }
 p {
   float: left;
   margin-right: 20px;
   color: aliceblue;
 }
-.box {
-  font-size: 0.5em;
-  float: left;
-  width: 100px;
+.titleContent {
+  width: 100%;
   height: 50px;
-  margin-top: 10px;
-  margin-right: 10px;
-  color: white;
-  text-align: center;
 }
 </style>

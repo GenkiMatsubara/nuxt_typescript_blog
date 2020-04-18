@@ -1,7 +1,12 @@
 <template>
   <div class>
     <Header />
-    <slot />
+    <div class="main">
+      <div class="content">
+        <slot />
+      </div>
+      <div class="sideBar">サイドバー</div>
+    </div>
     <Footer />
   </div>
 </template>
@@ -22,5 +27,16 @@ export default {
   created() {}
 };
 </script>
-<style scoped lang="css">
+<style scoped lang="scss">
+.main {
+  width: 100%;
+  display: flex;
+  .content {
+    width: calc(100% - 300px);
+  }
+  .sideBar {
+    background-color: aqua;
+    width: 300px;
+  }
+}
 </style>

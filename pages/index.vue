@@ -38,7 +38,7 @@ export default {
 </script>
 <style scoped lang="css">
 .img_box img {
-  width: 100%;
+  width: 50%;
 }
 .imageList {
   margin-top: 120px;

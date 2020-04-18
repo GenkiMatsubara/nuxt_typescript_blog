@@ -4,7 +4,7 @@
       <h1>topだよ</h1>
       <Cards />
       <div class="img_box">
-        <SetImage :src="'top_bg.png'" :alt="'トップ画像'" />
+        <!-- <SetImage :src="'top_bg.png'" :alt="'トップ画像'" /> -->
       </div>
       <Cards />
     </div>
