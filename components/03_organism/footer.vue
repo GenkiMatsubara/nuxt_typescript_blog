@@ -1,8 +1,10 @@
 <template>
   <footer class="footer">
-    <n-link class="link" :to="'/'">
-      <p>Genkiのブログ</p>
-    </n-link>
+    <div class="titleContent">
+      <n-link class="link" :to="'/'">
+        <p>Genkiのブログ</p>
+      </n-link>
+    </div>
   </footer>
 </template>
 
@@ -21,15 +23,17 @@ export default {
 .footer {
   width: 100%;
   height: 70px;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-top: 1px;
-  text-align: center;
   background: #0a58a8;
   color: aliceblue;
   font-size: 2em;
-  font-family: fantasy;
   font-weight: bold;
 }
-
+.titleContent p {
+  font-size: 36px;
+}
 p {
   color: white;
 }

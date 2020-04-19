@@ -1,13 +1,14 @@
 <template>
   <PageTemplate>
     <div class="wrapper">
-      <div v-html="$md.render(pageData.bodyContent)"></div>
+      <RenderHtml :htmlData="pageData.bodyContent" />
     </div>
   </PageTemplate>
 </template>
 
 <script>
 import PageTemplate from "@/components/04_templates/pageTemplate.vue";
+import RenderHtml from "@/components/02_molecule/renderHtml.vue";
 export default {
   data() {
     return {
@@ -16,7 +17,8 @@ export default {
     };
   },
   components: {
-    PageTemplate
+    PageTemplate,
+    RenderHtml
   },
   created() {
     console.log(this.pageData);
@@ -26,4 +28,7 @@ export default {
 </script>
 
 <style scoped lang='css'>
+.renderHtml {
+  width: 100%;
+}
 </style>

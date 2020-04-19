@@ -1,11 +1,12 @@
 <template>
   <PageTemplate>
-    <div v-html="$md.render(pageData.bodyContent)"></div>
+    <RenderHtml :htmlData="pageData.bodyContent" />
   </PageTemplate>
 </template>
 
 <script>
 import PageTemplate from "@/components/04_templates/pageTemplate.vue";
+import RenderHtml from "@/components/02_molecule/renderHtml.vue";
 export default {
   data() {
     return {
@@ -14,7 +15,8 @@ export default {
     };
   },
   components: {
-    PageTemplate
+    PageTemplate,
+    RenderHtml
   },
   created() {
     console.log(this.pageData);

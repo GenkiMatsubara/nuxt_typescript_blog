@@ -94,7 +94,7 @@ export default {
 @media (max-width: 480px) {
   .cardsComponent {
     display: block;
-    height: 40px;
+    height: auto;
     .box {
       width: 100%;
       .card_text_box {

@@ -39,6 +39,8 @@ export default {
 .header {
   width: 100%;
   height: auto;
+  padding-left: 16px;
+  padding-right: 16px;
   background: #0a58a8;
   color: aliceblue;
   font-size: 2em;

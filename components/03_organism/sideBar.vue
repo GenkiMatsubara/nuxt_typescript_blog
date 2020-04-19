@@ -5,15 +5,20 @@
         <p>Genkiのブログ</p>
       </n-link>
     </div>
+    <Cards />
   </div>
 </template>
 
 <script>
+import Cards from "@/components/02_molecule/cards.vue";
 export default {
   data() {
     return {};
   },
-  created() {}
+  created() {},
+  components: {
+    Cards
+  }
 };
 </script>
 
