@@ -8,6 +8,7 @@ a {
 }
 * {
   font-size: 18px;
+  color: #05368e;
 }
 @media (max-width: 896px) {
   * {

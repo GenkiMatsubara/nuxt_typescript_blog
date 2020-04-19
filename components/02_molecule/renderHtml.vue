@@ -28,38 +28,73 @@ export default {
   /deep/ h1 {
     font-size: 48px;
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
+    background: #0a58a8;
+    color: white;
+    padding: 6px 6px 6px 24px;
+    border-radius: 6px;
   }
   /deep/ h2 {
+    color: #0a58a8;
     font-size: 40px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    padding: 0.6em;
+    background: #e0edff;
+  }
+
+  /deep/ h2:after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 30px;
+    border: 15px solid transparent;
+    border-top: 15px solid #e0edff;
+    width: 0;
+    height: 0;
   }
   /deep/ h3 {
     font-size: 36px;
     margin-top: 18px;
-    margin-bottom: 18px;
+    margin-bottom: 36px;
+    color: #0a58a8;
+    padding-left: 18px;
+    border-left: solid 5px #0a58a8; /*左線*/
   }
   /deep/ h4 {
+    color: #0a58a8;
     font-size: 32px;
     margin-top: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   }
   /deep/ h5 {
+    color: #0a58a8;
     font-size: 28px;
     margin-top: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 28px;
   }
-  /deep/ p,
-  li {
+  /deep/ p {
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 36px;
+  }
+  /deep/ li {
     font-size: 18px;
     margin-top: 9px;
-    margin-bottom: 9px;
+    margin-bottom: 18px;
   }
-  /deep/ ul,
-  ol,
-  dl {
+  /deep/ ul {
     padding-left: 32px;
+    margin-bottom: 36px;
+  }
+  /deep/ ol {
+    padding-left: 32px;
+    margin-bottom: 36px;
+  }
+  /deep/ dl {
+    padding-left: 32px;
+    margin-bottom: 36px;
   }
   /deep/ img {
     width: 75%;
@@ -69,6 +104,9 @@ export default {
   /deep/ a {
     color: cornflowerblue;
     text-decoration: underline;
+  }
+  /deep/ strong {
+    color: #0a58a8;
   }
 }
 @media (max-width: 896px) {

@@ -69,6 +69,9 @@ export default {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       font-weight: bold;
       text-align: center;
+      .cards_font {
+        color: white;
+      }
     }
   }
 }

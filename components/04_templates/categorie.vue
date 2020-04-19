@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{savePath}}</h1>
-    <p>技術記事リスト</p>
+    <p>{{ setPageTitle() }}</p>
     <div v-for="(item, index) in setPageData[1]" :key="index">
       <div>
         <nuxt-link :to="setType(item)">
@@ -54,6 +54,21 @@ export default {
         "/" +
         data.base.replace(".json", "")
       );
+    },
+    setPageTitle() {
+      if (this.$route.path == "/tech") {
+        return "技術記事";
+      }
+      if (this.$route.path == "/tech") {
+        return "雑記記事";
+      }
+      if (this.$route.path == "/photo") {
+        return "写真紹介";
+      }
+      if (this.$route.path == "/travel") {
+        return "たびについて";
+      }
+      return "このページについて";
     }
   }
 };
