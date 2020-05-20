@@ -9,6 +9,7 @@
     "@types/webpack": "^4.41.6",
     "axios": "^0.19.2",
     "contentful": "^7.14.4",
+    "node-sass": "^4.14.1",
     "nuxt-ts": "^2.8.1",
     "ts-node": "^8.6.2",
     "vue-meta": "^2.3.2",
