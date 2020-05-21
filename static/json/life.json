@@ -1,39 +1,39 @@
 {
   "fileMap": {
-    "static/json/life/2.json": {
-      "title": "東京で初めて満員電車に乗り合わせ話",
-      "created_at": "2020-03-01T00:00:00.000Z",
-      "image": "/images/post/sample.jpg",
-      "dir": "static/json/life",
-      "base": "2.json",
-      "ext": ".json",
-      "sourceBase": "2.md",
-      "sourceExt": ".md"
-    },
-    "static/json/life/3.json": {
+    "static/json/life/post3.json": {
       "title": "人生とは自転車のようなものだ。",
       "created_at": "2020-03-01T00:00:00.000Z",
       "image": "/images/post/sample.jpg",
       "dir": "static/json/life",
-      "base": "3.json",
+      "base": "post3.json",
       "ext": ".json",
-      "sourceBase": "3.md",
+      "sourceBase": "post3.md",
       "sourceExt": ".md"
     },
-    "static/json/life/1.json": {
+    "static/json/life/post2.json": {
+      "title": "東京で初めて満員電車に乗り合わせ話",
+      "created_at": "2020-03-01T00:00:00.000Z",
+      "image": "/images/post/sample.jpg",
+      "dir": "static/json/life",
+      "base": "post2.json",
+      "ext": ".json",
+      "sourceBase": "post2.md",
+      "sourceExt": ".md"
+    },
+    "static/json/life/post1.json": {
       "title": "スティーブ・ジョブズ",
       "created_at": "2020-03-01T00:00:00.000Z",
       "image": "/images/post/sample.jpg",
       "dir": "static/json/life",
-      "base": "1.json",
+      "base": "post1.json",
       "ext": ".json",
-      "sourceBase": "1.md",
+      "sourceBase": "post1.md",
       "sourceExt": ".md"
     }
   },
   "sourceFileArray": [
-    "static/md/life/1.md",
-    "static/md/life/2.md",
-    "static/md/life/3.md"
+    "static/md/life/post1.md",
+    "static/md/life/post2.md",
+    "static/md/life/post3.md"
   ]
 }

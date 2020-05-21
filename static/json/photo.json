@@ -10,16 +10,6 @@
       "sourceBase": "2.md",
       "sourceExt": ".md"
     },
-    "static/json/photo/3.json": {
-      "title": "テスト３",
-      "created_at": "2020-03-01T00:00:00.000Z",
-      "image": "/images/post/sample.jpg",
-      "dir": "static/json/photo",
-      "base": "3.json",
-      "ext": ".json",
-      "sourceBase": "3.md",
-      "sourceExt": ".md"
-    },
     "static/json/photo/1.json": {
       "title": "test-photo1",
       "created_at": "2020-03-01T00:00:00.000Z",
@@ -28,6 +18,16 @@
       "base": "1.json",
       "ext": ".json",
       "sourceBase": "1.md",
+      "sourceExt": ".md"
+    },
+    "static/json/photo/3.json": {
+      "title": "テスト３",
+      "created_at": "2020-03-01T00:00:00.000Z",
+      "image": "/images/post/sample.jpg",
+      "dir": "static/json/photo",
+      "base": "3.json",
+      "ext": ".json",
+      "sourceBase": "3.md",
       "sourceExt": ".md"
     }
   },

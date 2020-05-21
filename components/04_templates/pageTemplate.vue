@@ -58,7 +58,7 @@ export default {
   display: flex;
   .content {
     width: calc(100% - 300px - 32px);
-    margin: 0 16px;
+    margin: 0 16px 40px 32px;
     h1 {
       font-size: 32px;
     }

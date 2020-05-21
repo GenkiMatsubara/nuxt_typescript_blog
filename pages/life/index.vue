@@ -1,6 +1,5 @@
 <template>
   <PageTemplate pageTopImg="/images/life.jpg">
-    <h1>life</h1>
     <Categorie />
   </PageTemplate>
 </template>

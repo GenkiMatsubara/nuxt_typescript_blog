@@ -1,7 +1,8 @@
 <template>
   <PageTemplate pageTopImg="/images/photo.jpg">
-    <h1>photo</h1>
-    <iframe
+    <h1>ギャラリー</h1>
+    <div class="garary">
+      <iframe
       src="https://snapwidget.com/embed/815802"
       class="snapwidget-widget"
       allowtransparency="true"
@@ -9,6 +10,7 @@
       scrolling="no"
       style="border:none; overflow:hidden;  width: 100%; height:990px;"
     />
+    </div>
     <Categorie />
   </PageTemplate>
 </template>
@@ -35,5 +37,11 @@ export default {
 * {
   margin: 0;
   padding: 0;
+}
+h1 {
+  padding-left: 16px;
+}
+.garary {
+  padding: 0 16px;
 }
 </style>

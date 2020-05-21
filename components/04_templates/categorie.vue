@@ -80,24 +80,25 @@ export default {
   .subtitle{
     font-size: 24px;
     margin-bottom: 16px;
-    padding-left: 16px;
+    padding-left: 0;
   }
   h1{
     font-size: 32px;
-    padding-left: 16px;
+    padding-left: 0;
     margin-bottom: 16px;
   }
   h2{
     font-size: 30px;
-    padding-left: 16px;
+    padding-left: 0;
     margin-bottom: 16px;
   }
   .cardContents {
     .categorieCard {
       float: left;
       width: 50%;
+      margin: 30px 0;
       .cardContent {
-        padding: 0 16px;
+        padding-right: 16px;
       }
     }
   }

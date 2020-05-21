@@ -50,7 +50,7 @@ export default {
   .content {
     max-width: 1280px;
     height: 100%;
-    margin: 0 auto;
+    // margin: 0 auto;
     color: aliceblue;
   }
   .boxLink {

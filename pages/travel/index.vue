@@ -1,6 +1,6 @@
 <template>
   <PageTemplate pageTopImg="/images/travel.jpg">
-    <h3>ギャラリー</h3>
+    <!-- <h3>ギャラリー</h3> -->
     <iframe
       src="https://snapwidget.com/embed/815802"
       class="snapwidget-widget"
