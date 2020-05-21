@@ -3,7 +3,7 @@
     "static/json/tech/tech1.json": {
       "title": "タイトル",
       "created_at": "2020-03-01T00:00:00.000Z",
-      "image": "img1.jpg",
+      "image": "/images/post/sample.jpg",
       "dir": "static/json/tech",
       "base": "tech1.json",
       "ext": ".json",
@@ -13,7 +13,7 @@
     "static/json/tech/tech2.json": {
       "title": "タイトル2",
       "created_at": "2020-03-01T00:00:00.000Z",
-      "image": "img1.jpg",
+      "image": "/images/post/sample.jpg",
       "dir": "static/json/tech",
       "base": "tech2.json",
       "ext": ".json",
@@ -23,7 +23,7 @@
     "static/json/tech/tech3.json": {
       "title": "タイトル3",
       "created_at": "2020-03-01T00:00:00.000Z",
-      "image": "img1.jpg",
+      "image": "/images/post/sample.jpg",
       "dir": "static/json/tech",
       "base": "tech3.json",
       "ext": ".json",

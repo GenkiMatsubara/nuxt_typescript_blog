@@ -1,5 +1,5 @@
 <template>
-  <PageTemplate pageTopImg="tech.jpg">
+  <PageTemplate pageTopImg="/images/tech.jpg">
     <Categorie />
     <!-- <Cards /> -->
   </PageTemplate>

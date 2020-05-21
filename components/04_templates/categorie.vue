@@ -6,6 +6,7 @@
       <div>
         <nuxt-link :to="setType(item)">
           <h2>{{item.title}}</h2>
+          <img :src="item.image">
         </nuxt-link>
       </div>
     </div>

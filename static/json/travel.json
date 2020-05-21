@@ -3,7 +3,7 @@
     "static/json/travel/1.json": {
       "title": "旅１",
       "created_at": "2020-03-01T00:00:00.000Z",
-      "image": "img1.jpg",
+      "image": "/images/post/sample.jpg",
       "dir": "static/json/travel",
       "base": "1.json",
       "ext": ".json",
@@ -13,7 +13,7 @@
     "static/json/travel/3.json": {
       "title": "たび3",
       "created_at": "2020-03-01T00:00:00.000Z",
-      "image": "img1.jpg",
+      "image": "/images/post/sample.jpg",
       "dir": "static/json/travel",
       "base": "3.json",
       "ext": ".json",
@@ -23,7 +23,7 @@
     "static/json/travel/2.json": {
       "title": "旅２",
       "created_at": "2020-03-01T00:00:00.000Z",
-      "image": "img1.jpg",
+      "image": "/images/post/sample.jpg",
       "dir": "static/json/travel",
       "base": "2.json",
       "ext": ".json",
