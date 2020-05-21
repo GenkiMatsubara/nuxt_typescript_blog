@@ -32,11 +32,11 @@ export default {
   mounted() {},
   methods: {
     setSrc() {
-      this.imageSrc = require(`@/assets/images/${this.imageType}/${this.imageId}.jpg`);
+      this.imageSrc = `/images/${this.imageType}/${this.imageId}.jpg`;
       return this.imageSrc;
     },
     errorSrc() {
-      this.imageSrc = require(`@/assets/images/${this.imageType}/error.jpg`);
+      this.imageSrc = `/images/${this.imageType}/error.jpg`;
     },
     setAlt() {
       if (this.imageType === "icon") return this.gameTitle + "のアイコン";

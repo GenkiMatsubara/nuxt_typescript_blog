@@ -2,7 +2,7 @@
   <div class>
     <Header />
     <div class="mainImg">
-      <SetImage :src="pageTopImg" :alt="'トップ画像'" />
+      <img :src="pageTopImg" alt="トップ画像" />
     </div>
     <div class="main">
       <div class="content">
@@ -29,7 +29,7 @@ export default {
     pageTopImg: {
       type: String,
       default: () => {
-        return "sample.jpg";
+        return "/images/sample.jpg";
       }
     }
   },

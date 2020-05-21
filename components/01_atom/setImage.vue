@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="this.imageSrc" :alt="setAlt()" />
+    <img :src="this.src" :alt="setAlt()" />
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     setSrc() {
-      this.imageSrc = require(`@/assets/images/` + this.src);
+      // this.imageSrc = require(`/images/` + this.src);
       return this.imageSrc;
     },
     setAlt() {
