@@ -39,8 +39,8 @@ export default {
 .header {
   width: 100%;
   height: auto;
-  padding-left: 32px;
-  padding-right: 16px;
+  // padding-left: 32px;
+  // padding-right: 16px;
   background: #0a58a8;
   color: aliceblue;
   font-size: 2em;
@@ -50,6 +50,7 @@ export default {
   .content {
     max-width: 1280px;
     height: 100%;
+    margin-left: 32px;
     // margin: 0 auto;
     color: aliceblue;
   }
@@ -60,10 +61,8 @@ export default {
       font-size: 0.5em;
       float: left;
       width: 24%;
-      // margin-left: 1%;
       margin-right: 1%;
       height: 30px;
-      // margin-top: 10px;
       margin-right: 10px;
       color: white;
       text-align: center;
@@ -71,7 +70,6 @@ export default {
   }
 }
 p {
-  // float: left;
   font-size: 36px;
   margin-right: 20px;
   color: aliceblue;
@@ -80,16 +78,13 @@ p {
   width: 100%;
   height: 50px;
 }
-// タブ
-@media (max-width: 896px) {
-  p {
-    margin-left: 16px;
-  }
-}
-// SP
-@media (max-width: 480px) {
-  p {
-    font-size: 32px;
+// mobile
+@media screen and (max-width: 974px) {
+  .header {
+    width: 100%;
+    .content{
+      margin-left: 16px;
+    }
   }
 }
 </style>

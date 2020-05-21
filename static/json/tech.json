@@ -1,15 +1,15 @@
 {
   "fileMap": {
-    "static/json/tech/2.json": {
-      "title": "【コピペですぐに使える】画像圧縮機能",
-      "created_at": "2020-03-02T00:00:00.000Z",
+    "static/json/tech/1.json": {
+      "title": "Gatby.js＋NetlifyでLightHouse満点のサイトを1日で作った話",
+      "created_at": "2019-11-06T00:00:00.000Z",
       "type": "tech",
       "image": "/images/post/sample.jpg",
-      "description": "gulpとimageminを使用して画像の圧縮を行う方法を解説しています。コピペでOKです！",
+      "description": "Gatby.jsとNetlifyでお手軽にブログを作成して公開するまでの手順を記事にしました。",
       "dir": "static/json/tech",
-      "base": "2.json",
+      "base": "1.json",
       "ext": ".json",
-      "sourceBase": "2.md",
+      "sourceBase": "1.md",
       "sourceExt": ".md"
     },
     "static/json/tech/3.json": {
@@ -24,16 +24,16 @@
       "sourceBase": "3.md",
       "sourceExt": ".md"
     },
-    "static/json/tech/1.json": {
-      "title": "Gatby.js＋NetlifyでLightHouse満点のサイトを1日で作った話",
-      "created_at": "2019-11-06T00:00:00.000Z",
+    "static/json/tech/2.json": {
+      "title": "【コピペですぐに使える】画像圧縮機能",
+      "created_at": "2020-03-02T00:00:00.000Z",
       "type": "tech",
       "image": "/images/post/sample.jpg",
-      "description": "Gatby.jsとNetlifyでお手軽にブログを作成して公開するまでの手順を記事にしました。",
+      "description": "gulpとimageminを使用して画像の圧縮を行う方法を解説しています。コピペでOKです！",
       "dir": "static/json/tech",
-      "base": "1.json",
+      "base": "2.json",
       "ext": ".json",
-      "sourceBase": "1.md",
+      "sourceBase": "2.md",
       "sourceExt": ".md"
     }
   },

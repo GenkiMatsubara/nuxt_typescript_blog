@@ -117,4 +117,51 @@ export default {
     visibility: hidden;
   }
 }
+
+// mobile
+@media screen and (max-width: 974px) {
+  .categoriePage {
+    width: 100%;
+    .subtitle{
+      // font-size: 24px;
+      // margin-bottom: 16px;
+      // padding-left: 0;
+    }
+    h1{
+      // font-size: 32px;
+      // padding-left: 0;
+      // margin-bottom: 16px;
+    }
+    h2{
+      // font-size: 30px;
+      // padding-left: 0;
+      // margin-bottom: 16px;
+    }
+    .cardContents {
+      width: 100%;
+      .categorieCard {
+        float: none;
+        width: 100%;
+        // margin: 30px 0;
+        .cardContent {
+          padding-right: 0;
+          // h2 {
+          //   font-size: 20px;
+          //   overflow: hidden;
+          //   height: 3em;
+          //   overflow: hidden;
+          //   text-overflow: ellipsis;
+          // }
+        }
+      }
+    }
+    // .cardContents:after {
+    //   content: "";
+    //   display: block;
+    //   clear: both;
+    //   height: 0;
+    //   visibility: hidden;
+    // }
+  }
+}
 </style>
