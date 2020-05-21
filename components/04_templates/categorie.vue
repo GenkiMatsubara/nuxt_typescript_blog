@@ -99,6 +99,13 @@ export default {
       margin: 30px 0;
       .cardContent {
         padding-right: 16px;
+        h2 {
+          font-size: 20px;
+          overflow: hidden;
+          height: 3em;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
       }
     }
   }
