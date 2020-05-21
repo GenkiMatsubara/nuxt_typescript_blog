@@ -49,6 +49,12 @@ module.exports = {
   plugins: [
   ],
 
+  styleResources: {
+    scss: [
+      './assets/styles/_variables.scss'
+    ]
+  },
+  
   /*
   ** Nuxt.js modules
   */

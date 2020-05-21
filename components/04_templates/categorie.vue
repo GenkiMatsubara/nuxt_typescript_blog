@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="categoriePage">
     <h1>{{savePath}}</h1>
-    <p>{{ setPageTitle() }}</p>
+    <p class="subtitle">{{ setPageTitle() }}</p>
     <div v-for="(item, index) in setPageData[1]" :key="index">
       <div>
         <nuxt-link :to="setType(item)">
@@ -44,7 +44,8 @@ export default {
       }
     },
     savePath() {
-      return this.$route.path;
+      const setTitle = this.$route.path;
+      return setTitle.slice(1);
     }
   },
   methods: {
@@ -73,5 +74,10 @@ export default {
   }
 };
 </script>
-<style scoped lang="css">
+<style scoped lang="scss">
+.categoriePage {
+  .subtitle{font-size: 24px;margin-bottom: 16px;}
+  h1{font-size: 32px;margin-bottom: 16px;}
+  h2{font-size: 30px;margin-bottom: 16px;}
+}
 </style>

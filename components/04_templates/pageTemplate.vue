@@ -45,8 +45,12 @@ export default {
 <style scoped lang="scss">
 .mainImg {
   width: 100%;
-  // height: 300px;
-  // background-color: goldenrod;
+  height: 200px;
+  position: sticky;
+  position: -webkit-sticky;
+  display: inline-block;
+  overflow: hidden;
+  background-size: cover;
 }
 .main {
   width: 100%;
@@ -55,14 +59,18 @@ export default {
   .content {
     width: calc(100% - 300px - 32px);
     margin: 0 16px;
+    h1 {
+      font-size: 32px;
+    }
   }
   .sideBar {
     background-color: aqua;
     width: 300px;
   }
 }
-@media (max-width: 1280px) {
-}
+
+
+
 @media (max-width: 896px) {
   .mainImg {
     width: 100%;

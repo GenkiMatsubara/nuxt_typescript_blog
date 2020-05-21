@@ -1,6 +1,5 @@
 <template>
   <PageTemplate pageTopImg="tech.jpg">
-    <h1>tech</h1>
     <Categorie />
     <!-- <Cards /> -->
   </PageTemplate>
