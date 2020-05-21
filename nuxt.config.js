@@ -7,6 +7,9 @@ const lifePostData = require('./static/json/life.json');
 const photoPostData = require('./static/json/photo.json');
 const travelPostData = require('./static/json/travel.json');
 
+require('dotenv').config();
+const { CTF_SPACE_ID, CTF_CDA_ACCESS_TOKEN } = process.env;
+
 module.exports = {
   mode: 'universal',
   buildModules: ['@nuxt/typescript-build'],
@@ -23,6 +26,10 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  },
+  env: {
+    CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN
   },
 
   /*

@@ -2,7 +2,6 @@
   <PageTemplate>
     <div class="imageList clearfix">
       <div>ようこそ！</div>
-
       <div>
         <div class="category">
           <nuxt-link to="/tech">
@@ -54,6 +53,8 @@ import PageTemplate from "@/components/04_templates/pageTemplate.vue";
 import Cards from "@/components/02_molecule/cards.vue";
 import SetImage from "@/components/01_atom/setImage.vue";
 
+import client from '~/plugins/contentful.js'
+
 export default {
   data() {
     return {
@@ -71,6 +72,15 @@ export default {
   },
   methods: {
     readJSON() {}
+  },
+  asyncData() {
+    return client.getEntries()
+      .then(entries => {
+        console.log(entries.items);
+        return {
+          posts: entries.items
+        }
+    })
   }
 };
 </script>
