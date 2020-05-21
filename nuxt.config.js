@@ -2,10 +2,10 @@ import { Configuration } from 'webpack'
 import { Context } from '@nuxt/vue-app'
 const pkg = require('./package')
 
-const techPostData = require('./static/json/tech.json');
-const lifePostData = require('./static/json/life.json');
-const photoPostData = require('./static/json/photo.json');
-const travelPostData = require('./static/json/travel.json');
+const techPostData = '/json/tech.json';
+const lifePostData = '/json/life.json';
+const photoPostData = '/json/photo.json';
+const travelPostData = '/json/travel.json';
 
 require('dotenv').config();
 const { CTF_SPACE_ID, CTF_CDA_ACCESS_TOKEN } = process.env;

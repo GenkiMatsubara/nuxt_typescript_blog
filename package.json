@@ -23,15 +23,15 @@
     "sass-loader": "^8.0.2"
   },
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate",
+    "dev": "npm run md && nuxt-ts",
+    "build": "npm run md && nuxt-ts build",
+    "start": "npm run md && nuxt-ts start",
+    "generate": "npm run md && nuxt-ts generate",
     "lint": "tslint --project",
-    "mdte": "processmd assets/md/tech/*.{yml,md} --stdout --outputDir static/json/tech > static/json/tech.json",
-    "mdli": "processmd assets/md/life/*.{yml,md} --stdout --outputDir static/json/life > static/json/life.json",
-    "mdph": "processmd assets/md/photo/*.{yml,md} --stdout --outputDir static/json/photo > static/json/photo.json",
-    "mdtr": "processmd assets/md/travel/*.{yml,md} --stdout --outputDir static/json/travel > static/json/travel.json",
+    "mdte": "processmd static/md/tech/*.{yml,md} --stdout --outputDir static/json/tech > static/json/tech.json",
+    "mdli": "processmd static/md/life/*.{yml,md} --stdout --outputDir static/json/life > static/json/life.json",
+    "mdph": "processmd static/md/photo/*.{yml,md} --stdout --outputDir static/json/photo > static/json/photo.json",
+    "mdtr": "processmd static/md/travel/*.{yml,md} --stdout --outputDir static/json/travel > static/json/travel.json",
     "md": "npm run mdte && npm run mdli && npm run mdph && npm run mdtr"
   },
   "repository": {

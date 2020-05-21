@@ -1,5 +1,15 @@
 {
   "fileMap": {
+    "static/json/life/3.json": {
+      "title": "人生とは自転車のようなものだ。",
+      "created_at": "2020-03-01T00:00:00.000Z",
+      "image": "img1.jpg",
+      "dir": "static/json/life",
+      "base": "3.json",
+      "ext": ".json",
+      "sourceBase": "3.md",
+      "sourceExt": ".md"
+    },
     "static/json/life/1.json": {
       "title": "スティーブ・ジョブズ",
       "created_at": "2020-03-01T00:00:00.000Z",
@@ -19,21 +29,11 @@
       "ext": ".json",
       "sourceBase": "2.md",
       "sourceExt": ".md"
-    },
-    "static/json/life/3.json": {
-      "title": "人生とは自転車のようなものだ。",
-      "created_at": "2020-03-01T00:00:00.000Z",
-      "image": "img1.jpg",
-      "dir": "static/json/life",
-      "base": "3.json",
-      "ext": ".json",
-      "sourceBase": "3.md",
-      "sourceExt": ".md"
     }
   },
   "sourceFileArray": [
-    "assets/md/life/1.md",
-    "assets/md/life/2.md",
-    "assets/md/life/3.md"
+    "static/md/life/1.md",
+    "static/md/life/2.md",
+    "static/md/life/3.md"
   ]
 }
