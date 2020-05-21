@@ -1,5 +1,5 @@
 <template>
-  <PageTemplate pageTopImg="life.jpg">
+  <PageTemplate pageTopImg="/images/life.jpg">
     <h1>life</h1>
     <Categorie />
   </PageTemplate>

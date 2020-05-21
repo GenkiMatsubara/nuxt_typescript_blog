@@ -1,5 +1,5 @@
 <template>
-  <PageTemplate pageTopImg="photo.jpg">
+  <PageTemplate pageTopImg="/images/photo.jpg">
     <h1>photo</h1>
     <iframe
       src="https://snapwidget.com/embed/815802"
