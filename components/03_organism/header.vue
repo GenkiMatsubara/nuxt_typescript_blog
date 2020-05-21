@@ -39,7 +39,7 @@ export default {
 .header {
   width: 100%;
   height: auto;
-  padding-left: 16px;
+  padding-left: 32px;
   padding-right: 16px;
   background: #0a58a8;
   color: aliceblue;

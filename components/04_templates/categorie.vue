@@ -2,11 +2,11 @@
   <div class="categoriePage">
     <h1>{{savePath}}</h1>
     <p class="subtitle">{{ setPageTitle() }}</p>
-    <div v-for="(item, index) in setPageData[1]" :key="index">
-      <div>
-        <nuxt-link :to="setType(item)">
-          <h2>{{item.title}}</h2>
+    <div class="cardContents">
+      <div class="categorieCard" v-for="(item, index) in setPageData[1]" :key="index">
+        <nuxt-link tag="div" class="cardContent" :to="setType(item)">
           <img :src="item.image">
+          <h2>{{item.title}}</h2>
         </nuxt-link>
       </div>
     </div>
@@ -77,8 +77,36 @@ export default {
 </script>
 <style scoped lang="scss">
 .categoriePage {
-  .subtitle{font-size: 24px;margin-bottom: 16px;}
-  h1{font-size: 32px;margin-bottom: 16px;}
-  h2{font-size: 30px;margin-bottom: 16px;}
+  .subtitle{
+    font-size: 24px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+  }
+  h1{
+    font-size: 32px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+  h2{
+    font-size: 30px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+  .cardContents {
+    .categorieCard {
+      float: left;
+      width: 50%;
+      .cardContent {
+        padding: 0 16px;
+      }
+    }
+  }
+  .cardContents:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
 }
 </style>

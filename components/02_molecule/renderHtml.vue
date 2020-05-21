@@ -104,8 +104,8 @@ export default {
   }
   /deep/ img {
     width: auto;
-    padding-left: 24px;
-    max-width: 75%;
+    // padding-left: 24px;
+    max-width: 100%;
     margin: 40px 0;
   }
   /deep/ a {
