@@ -21,7 +21,7 @@ export default {
     RenderHtml
   },
   created() {
-    console.log(this.pageData);
+    // console.log(this.pageData);
   },
   methods: {}
 };

@@ -2,10 +2,10 @@ import { Configuration } from 'webpack'
 import { Context } from '@nuxt/vue-app'
 const pkg = require('./package')
 
-const techPostData = '/json/tech.json';
-const lifePostData = '/json/life.json';
-const photoPostData = '/json/photo.json';
-const travelPostData = '/json/travel.json';
+const techPostData = require('./static/json/tech.json');
+const lifePostData = require('./static/json/life.json');
+const photoPostData = require('./static/json/photo.json');
+const travelPostData = require('./static/json/travel.json');
 
 require('dotenv').config();
 const { CTF_SPACE_ID, CTF_CDA_ACCESS_TOKEN } = process.env;
@@ -77,7 +77,8 @@ module.exports = {
     routes() {
       let allRoutes = [];
       const techRoutes = techPostData['sourceFileArray'].map(item => {
-        const techId = item.replace('assets/md/tech/', '').replace('.md', '')
+        console.log(item);
+        const techId = item.replace('static/md/tech/', '').replace('.md', '')
         return `tech/${ techId }`;
       })
       techRoutes.forEach(element => {
@@ -85,7 +86,7 @@ module.exports = {
       });
 
       const lifeRoutes = lifePostData['sourceFileArray'].map(item => {
-        const lifeId = item.replace('assets/md/life/', '').replace('.md', '')
+        const lifeId = item.replace('static/md/life/', '').replace('.md', '')
         return `life/${ lifeId }`;
       })
       lifeRoutes.forEach(element => {
@@ -93,7 +94,7 @@ module.exports = {
       });
 
       const photoRoutes = photoPostData['sourceFileArray'].map(item => {
-        const photoId = item.replace('assets/md/photo/', '').replace('.md', '')
+        const photoId = item.replace('static/md/photo/', '').replace('.md', '')
         return `photo/${ photoId }`;
       })
       photoRoutes.forEach(element => {
@@ -101,7 +102,7 @@ module.exports = {
       });
 
       const travelRoutes = travelPostData['sourceFileArray'].map(item => {
-        const travelId = item.replace('assets/md/travel/', '').replace('.md', '')
+        const travelId = item.replace('static/md/travel/', '').replace('.md', '')
         return `travel/${ travelId }`;
       })
       travelRoutes.forEach(element => {
