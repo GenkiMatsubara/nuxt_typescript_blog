@@ -1,37 +1,36 @@
 <template>
   <PageTemplate>
     <div class="imageList clearfix">
-      <div>ようこそ！</div>
       <div>
         <div class="category">
-          <nuxt-link to="/tech">
-            <div class="card tech">プログラミング</div>
-          </nuxt-link>
           <div class="cardText">
             技術的な学びを記事にしていきます。
             <br />また大学の理数系学科で学んだ内容も記事にしていきます。
           </div>
+          <nuxt-link to="/tech">
+            <div class="card tech">プログラミング</div>
+          </nuxt-link>
         </div>
         <div class="category">
-          <nuxt-link to="/life">
-            <div class="card life">LIFE</div>
-          </nuxt-link>
           <div class="cardText">
             ライフハックに関することを記事にしていきます。
             <br />また大学の一般教養科目で学んだ内容も記事にしていきます。
           </div>
+          <nuxt-link to="/life">
+            <div class="card life">LIFE</div>
+          </nuxt-link>
         </div>
         <div class="category">
+          <div class="cardText">趣味の写真を公開しています。</div>
           <nuxt-link to="/photo">
             <div class="card photo">写真</div>
           </nuxt-link>
-          <div class="cardText">趣味の写真を公開しています。</div>
         </div>
         <div class="category">
+          <div class="cardText">ひとり旅を記事にしていきます。</div>
           <nuxt-link to="/travel">
             <div class="card travel">旅</div>
           </nuxt-link>
-          <div class="cardText">ひとり旅を記事にしていきます。</div>
         </div>
       </div>
 
@@ -114,8 +113,8 @@ export default {
     width: calc(100% - 200px);
   }
 }
-// タブ
-@media (max-width: 896px) {
+// mobile
+@media screen and (max-width: 974px) {
   .category {
     display: flex;
     height: 150px;
@@ -126,24 +125,25 @@ export default {
     }
     .cardText {
       width: calc(100% - 150px);
+      padding-right: 16px;
     }
   }
 }
-// SP
-@media (max-width: 480px) {
-  .category {
-    display: block;
-    width: 100%;
-    height: 300px;
-    .card {
-      // width: 200px;
-      width: 100%;
-      height: 200px;
-    }
-    .cardText {
-      width: 100%;
-    }
-  }
-}
+// // SP
+// @media (max-width: 480px) {
+//   .category {
+//     // display: block;
+//     width: 100%;
+//     height: 300px;
+//     .card {
+//       // width: 200px;
+//       width: 100%;
+//       height: 200px;
+//     }
+//     .cardText {
+//       width: 100%;
+//     }
+//   }
+// }
 </style>
 

@@ -86,11 +86,13 @@ export default {
     font-size: 32px;
     padding-left: 0;
     margin-bottom: 16px;
+    font-weight: bold;
   }
   h2{
     font-size: 30px;
     padding-left: 0;
     margin-bottom: 16px;
+    font-weight: bold;
   }
   .cardContents {
     .categorieCard {
@@ -99,12 +101,15 @@ export default {
       margin: 30px 0;
       .cardContent {
         padding-right: 16px;
+        img {cursor: pointer;}
         h2 {
           font-size: 20px;
+          font-weight: bold;
           overflow: hidden;
           height: 3em;
           overflow: hidden;
           text-overflow: ellipsis;
+          cursor: pointer;
         }
       }
     }
@@ -142,7 +147,7 @@ export default {
       .categorieCard {
         float: none;
         width: 100%;
-        // margin: 30px 0;
+        margin: 50px 0;
         .cardContent {
           padding-right: 0;
           // h2 {

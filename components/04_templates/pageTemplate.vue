@@ -45,7 +45,7 @@ export default {
 <style scoped lang="scss">
 .mainImg {
   width: 100%;
-  height: 200px;
+  height: 300px;
   position: sticky;
   position: -webkit-sticky;
   display: inline-block;
@@ -54,7 +54,6 @@ export default {
 }
 .main {
   width: 100%;
-  // max-width: 1280px;
   display: flex;
   .content {
     width: calc(100% - 300px - 32px);
@@ -74,7 +73,7 @@ export default {
 @media (max-width: 896px) {
   .mainImg {
     width: 100%;
-    // height: 200px;
+    height: 200px;
   }
   .main {
     width: calc(100% - 32px);
