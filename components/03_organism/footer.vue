@@ -23,7 +23,7 @@
             </li>
           </ul>
         </div>
-        <div class="colum">
+        <!-- <div class="colum">
           <ul>
             <li>
               <n-link :to="'/tech'">リンク</n-link>
@@ -54,12 +54,12 @@
               <n-link :to="'/travel'">リンク</n-link>
             </li>
           </ul>
-        </div>
+        </div> -->
         <div class="colum">
           <ul>
-            <li>
+            <!-- <li>
               <n-link :to="'/tech'">お問い合わせ</n-link>
-            </li>
+            </li> -->
             <li>
               <n-link :to="'/life'">プライバシーポリシー</n-link>
             </li>

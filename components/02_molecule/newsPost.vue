@@ -68,15 +68,27 @@ export default {
 <style scoped lang="scss">
 .newPost {
   h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
   .post {
     margin-bottom: 20px;
     .postTitle {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 }
 // mobile
-@media screen and (max-width: 974px) {}
+@media screen and (max-width: 974px) {
+  .newPost {
+    h2 {
+      font-size: 28px;
+    }
+    .post {
+      margin-bottom: 20px;
+      .postTitle {
+        font-size: 20px;
+      }
+    }
+  }
+}
 </style>

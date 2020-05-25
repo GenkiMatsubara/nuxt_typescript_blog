@@ -1,16 +1,9 @@
 <template>
   <PageTemplate>
     <div class="imageList clearfix">
-      <NewsPost />
+      <!-- <NewsPost /> -->
+      <h2>カテゴリーから探す</h2>
       <Genre />
-      <div>
-        <div>使用技術について</div>
-        <div>
-          Nuxt.js
-          <br />FireBase
-        </div>
-        <div>FireBaseとFireBaseのABテスト機能を使ってみたいという理由で今回はこのような選定になっています。</div>
-      </div>
       <!-- <Cards /> -->
     </div>
   </PageTemplate>
@@ -56,5 +49,14 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+h2 {
+  font-size: 32px;
+}
+.post {
+  margin-bottom: 20px;
+  .postTitle {
+    font-size: 24px;
+  }
+}
 </style>
 

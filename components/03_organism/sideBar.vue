@@ -6,18 +6,21 @@
       </n-link>
     </div>
     <Cards />
+    <NewsPost />
   </div>
 </template>
 
 <script>
 import Cards from "@/components/02_molecule/cards.vue";
+import NewsPost from "@/components/02_molecule/newsPost.vue";
 export default {
   data() {
     return {};
   },
   created() {},
   components: {
-    Cards
+    Cards,
+    NewsPost
   }
 };
 </script>
