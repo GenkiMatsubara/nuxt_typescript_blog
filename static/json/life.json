@@ -1,13 +1,13 @@
 {
   "fileMap": {
-    "static/json/life/post1.json": {
-      "title": "スティーブ・ジョブズ",
+    "static/json/life/post2.json": {
+      "title": "東京で初めて満員電車に乗り合わせ話",
       "created_at": "2020-03-01T00:00:00.000Z",
       "image": "/images/post/sample.jpg",
       "dir": "static/json/life",
-      "base": "post1.json",
+      "base": "post2.json",
       "ext": ".json",
-      "sourceBase": "post1.md",
+      "sourceBase": "post2.md",
       "sourceExt": ".md"
     },
     "static/json/life/post3.json": {
@@ -20,14 +20,14 @@
       "sourceBase": "post3.md",
       "sourceExt": ".md"
     },
-    "static/json/life/post2.json": {
-      "title": "東京で初めて満員電車に乗り合わせ話",
+    "static/json/life/post1.json": {
+      "title": "スティーブ・ジョブズ",
       "created_at": "2020-03-01T00:00:00.000Z",
       "image": "/images/post/sample.jpg",
       "dir": "static/json/life",
-      "base": "post2.json",
+      "base": "post1.json",
       "ext": ".json",
-      "sourceBase": "post2.md",
+      "sourceBase": "post1.md",
       "sourceExt": ".md"
     }
   },

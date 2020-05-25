@@ -1,6 +1,7 @@
 <template>
   <PageTemplate>
     <div class="imageList clearfix">
+      <NewsPost />
       <div>
         <div class="category">
           <div class="cardText">
@@ -33,7 +34,6 @@
           </nuxt-link>
         </div>
       </div>
-
       <div>
         <div>使用技術について</div>
         <div>
@@ -50,8 +50,8 @@
 <script>
 import PageTemplate from "@/components/04_templates/pageTemplate.vue";
 import Cards from "@/components/02_molecule/cards.vue";
+import NewsPost from "@/components/02_molecule/newsPost.vue";
 import SetImage from "@/components/01_atom/setImage.vue";
-
 import client from '~/plugins/contentful.js'
 
 export default {
@@ -63,7 +63,8 @@ export default {
   components: {
     PageTemplate,
     Cards,
-    SetImage
+    SetImage,
+    NewsPost
   },
   created() {},
   mounted() {
