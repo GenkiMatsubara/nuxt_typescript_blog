@@ -48,10 +48,10 @@ export default {
   padding-top: 10px;
   padding-bottom: 10px;
   .content {
+    widows: 100%;
     max-width: 1180px;
     height: 100%;
-    margin-left: 32px;
-    // margin: 0 auto;
+    margin: 0 auto;
     color: aliceblue;
   }
   .boxLink {
@@ -71,6 +71,7 @@ export default {
 }
 p {
   font-size: 36px;
+  margin-left: 32px;
   margin-right: 20px;
   color: aliceblue;
 }
