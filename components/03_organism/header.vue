@@ -48,7 +48,7 @@ export default {
   padding-top: 10px;
   padding-bottom: 10px;
   .content {
-    max-width: 1280px;
+    max-width: 1180px;
     height: 100%;
     margin-left: 32px;
     // margin: 0 auto;

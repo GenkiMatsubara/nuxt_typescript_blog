@@ -55,6 +55,8 @@ export default {
 .main {
   width: 100%;
   display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
   .content {
     width: calc(100% - 300px - 32px);
     margin: 0 16px 40px 32px;
