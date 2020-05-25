@@ -71,7 +71,7 @@ export default {
 }
 p {
   font-size: 36px;
-  margin-left: 32px;
+  margin-left: 16px;
   margin-right: 20px;
   color: aliceblue;
 }

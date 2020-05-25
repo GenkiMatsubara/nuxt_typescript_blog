@@ -59,7 +59,7 @@ export default {
   margin: 0 auto;
   .content {
     width: calc(100% - 300px - 32px);
-    margin: 0 16px 40px 32px;
+    margin: 0 16px 40px;
     h1 {
       font-size: 32px;
     }

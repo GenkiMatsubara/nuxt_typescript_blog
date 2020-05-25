@@ -89,8 +89,10 @@ export default {
   font-size: 2em;
   font-weight: bold;
   .wrapper {
-    margin: 0 32px;
-    padding: 32px 0 64px;
+    width: auto;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 32px 16px 64px;
     .footerTitle {
       width: 100%;
       p {
