@@ -1,9 +1,14 @@
 <template>
-  <div class="">
-    <div>最新の記事</div>
+  <div class="newPost">
+    <h2>最新の10記事</h2>
     <div v-for="(item,index) in setAllPostData" :key="index">
-      <div>{{item.title}}</div>
-      <div>{{setDate(item.created_at)}}</div>
+      <nuxt-link :to="setLinke(item)">
+        <div class="post">
+          <img :src="item.image" :alt="item.title">
+          <div>{{setDate(item.created_at)}}</div>
+          <div class="postTitle">{{item.title}}</div>
+        </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -39,13 +44,16 @@ export default {
         return (a.created_at < b.created_at ? 1 : -1);
       });
 
-      return setArray;
+      console.log(setArray.slice(0, 10))
+
+      return setArray.slice(0, 10);
     },
   },
-  created(){
-    console.log(this.setAllPostData)
-  },
   methods:{
+    setLinke(item){
+      const link = '/' + item.dir.replace('static/json/', '') + '/' + item.base.replace('.json', '');
+      return link;
+    },
     setDate(date){
       const setDate = new Date(date);
       const year = setDate.getFullYear();
@@ -58,4 +66,17 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+.newPost {
+  h2 {
+    font-size: 32px;
+  }
+  .post {
+    margin-bottom: 20px;
+    .postTitle {
+      font-size: 24px;
+    }
+  }
+}
+// mobile
+@media screen and (max-width: 974px) {}
 </style>
