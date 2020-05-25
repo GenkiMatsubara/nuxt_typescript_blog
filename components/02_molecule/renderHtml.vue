@@ -116,7 +116,7 @@ export default {
     color: #0a58a8;
   }
   /deep/ pre {
-    margin: 20px 24px;
+    // margin: 20px 24px;
     padding: 20px;
     border-radius: 10px;
     background: rgb(167, 164, 164);
