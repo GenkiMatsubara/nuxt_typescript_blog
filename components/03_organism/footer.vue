@@ -66,6 +66,7 @@ export default {
       p {
         color: white;
         font-size: 36px;
+        margin-bottom: 20px;
       }
     }
     .footrtContents {
@@ -114,6 +115,9 @@ export default {
         }
         ul {
           list-style: none;
+        }
+        li{
+          margin-bottom: 10px;
         }
         p {
           color: white;

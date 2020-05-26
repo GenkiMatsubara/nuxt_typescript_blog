@@ -71,32 +71,15 @@ export default {
     width: 300px;
   }
 }
-
-
-
-@media (max-width: 896px) {
+// mobile
+@media (max-width: 974px) {
   .mainImg {
     width: 100%;
     height: 200px;
   }
   .main {
-    width: calc(100% - 32px);
-    margin: 0 16px;
-    display: block;
-    .content {
-      width: 100%;
-      margin: 0;
-    }
-    .sideBar {
-      width: 100%;
-    }
-  }
-}
-// SP
-@media (max-width: 480px) {
-  .main {
-    width: calc(100% - 32px);
-    margin: 0 16px;
+    width: 100%;
+    margin: 0;
     display: block;
     .content {
       width: 100%;

@@ -4,8 +4,8 @@
     <div v-for="(item,index) in setAllPostData" :key="index">
       <nuxt-link :to="setLinke(item)">
         <div class="post">
-          <img :src="item.image" :alt="item.title">
-          <div>{{setDate(item.created_at)}}</div>
+          <img class="postImg" :src="item.image" :alt="item.title">
+          <div class="postDate">{{setDate(item.created_at)}}</div>
           <div class="postTitle">{{item.title}}</div>
         </div>
       </nuxt-link>
@@ -67,11 +67,16 @@ export default {
 .newPost {
   h2 {
     font-size: 28px;
+    margin-bottom: 20px;
   }
   .post {
     margin-bottom: 20px;
+    .postImg {}
+    .postDate {
+      font-size: 16px;
+    }
     .postTitle {
-      font-size: 20px;
+      font-size: 24px;
     }
   }
 }
@@ -80,11 +85,15 @@ export default {
   .newPost {
     h2 {
       font-size: 28px;
+      margin-bottom: 10px;
     }
     .post {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      .postDate {
+        font-size: 16px;
+      }
       .postTitle {
-        font-size: 20px;
+        font-size: 24px;
       }
     }
   }
