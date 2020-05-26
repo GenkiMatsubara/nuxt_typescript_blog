@@ -22,7 +22,10 @@
               <n-link :to="'/travel'">旅</n-link>
             </li>
             <li>
-              <n-link :to="'/life'">プライバシーポリシー</n-link>
+              <n-link :to="'/about'">このサイトについて</n-link>
+            </li>
+            <li>
+              <n-link :to="'/spine'">アニメーション</n-link>
             </li>
           </ul>
         </div>

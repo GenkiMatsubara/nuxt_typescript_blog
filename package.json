@@ -19,9 +19,10 @@
   },
   "devDependencies": {
     "@nuxt/typescript": "^2.8.1",
+    "pixi-spine": "^2.1.8",
     "processmd": "^4.5.0",
-    "tslint-config-standard": "^9.0.0",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "tslint-config-standard": "^9.0.0"
   },
   "scripts": {
     "dev": "npm run md && nuxt-ts",

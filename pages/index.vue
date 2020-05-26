@@ -1,6 +1,7 @@
 <template>
   <PageTemplate>
     <div class="imageList clearfix">
+      <!-- <textAnime /> -->
       <!-- <NewsPost /> -->
       <h2>カテゴリーから探す</h2>
       <Genre />
@@ -13,6 +14,7 @@
 import PageTemplate from "@/components/04_templates/pageTemplate.vue";
 import Cards from "@/components/02_molecule/cards.vue";
 import Genre from "@/components/02_molecule/genre.vue";
+import TextAnime from "@/components/02_molecule/textAnime.vue";
 import NewsPost from "@/components/02_molecule/newsPost.vue";
 import SetImage from "@/components/01_atom/setImage.vue";
 import client from '~/plugins/contentful.js'
@@ -27,10 +29,12 @@ export default {
     PageTemplate,
     Cards,
     Genre,
+    TextAnime,
     SetImage,
     NewsPost
   },
-  created() {},
+  created() {
+  },
   mounted() {
     this.readJSON();
   },

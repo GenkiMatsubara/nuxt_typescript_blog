@@ -1,9 +1,7 @@
 <template>
   <div class>
     <Header />
-    <div class="mainImg">
-      <img :src="pageTopImg" alt="トップ画像" />
-    </div>
+    <div class="mainImg" :style="`backgroundImage: url(`+pageTopImg+`)`" alt="トップ画像"></div>
     <div class="main">
       <div class="content">
         <slot />
