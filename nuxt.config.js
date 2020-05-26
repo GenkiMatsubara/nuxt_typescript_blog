@@ -72,6 +72,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['pixi.js']
   },
   generate: {
     routes() {
