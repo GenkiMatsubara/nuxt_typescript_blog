@@ -40,7 +40,6 @@ export default {
   asyncData() {
     return client.getEntries()
       .then(entries => {
-        // console.log(entries.items);
         return {
           posts: entries.items
         }

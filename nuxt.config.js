@@ -77,7 +77,6 @@ module.exports = {
     routes() {
       let allRoutes = [];
       const techRoutes = techPostData['sourceFileArray'].map(item => {
-        console.log(item);
         const techId = item.replace('static/md/tech/', '').replace('.md', '')
         return `tech/${ techId }`;
       })

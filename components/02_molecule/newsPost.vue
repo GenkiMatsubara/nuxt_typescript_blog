@@ -44,8 +44,6 @@ export default {
         return (a.created_at < b.created_at ? 1 : -1);
       });
 
-      console.log(setArray.slice(0, 10))
-
       return setArray.slice(0, 10);
     },
   },

@@ -18,9 +18,7 @@ export default {
     PageTemplate,
     RenderHtml
   },
-  created() {
-    // console.log(this.pageData);
-  },
+  created() {},
   methods: {}
 };
 </script>

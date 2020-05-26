@@ -21,49 +21,14 @@
             <li>
               <n-link :to="'/travel'">旅</n-link>
             </li>
-          </ul>
-        </div>
-        <!-- <div class="colum">
-          <ul>
-            <li>
-              <n-link :to="'/tech'">リンク</n-link>
-            </li>
-            <li>
-              <n-link :to="'/life'">リンク</n-link>
-            </li>
-            <li>
-              <n-link :to="'/photo'">リンク</n-link>
-            </li>
-            <li>
-              <n-link :to="'/travel'">リンク</n-link>
-            </li>
-          </ul>
-        </div>
-        <div class="colum">
-          <ul>
-            <li>
-              <n-link :to="'/tech'">リンク</n-link>
-            </li>
-            <li>
-              <n-link :to="'/life'">リンク</n-link>
-            </li>
-            <li>
-              <n-link :to="'/photo'">リンク</n-link>
-            </li>
-            <li>
-              <n-link :to="'/travel'">リンク</n-link>
-            </li>
-          </ul>
-        </div> -->
-        <div class="colum">
-          <ul>
-            <!-- <li>
-              <n-link :to="'/tech'">お問い合わせ</n-link>
-            </li> -->
             <li>
               <n-link :to="'/life'">プライバシーポリシー</n-link>
             </li>
           </ul>
+        </div>
+        <div class="colum">
+        </div>
+        <div class="colum">
         </div>
       </div>
     </div>
