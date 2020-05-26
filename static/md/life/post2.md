@@ -1,7 +1,7 @@
 ---
 title: 東京で初めて満員電車に乗り合わせ話
 created_at: 2020-03-01
-image: /images/post/sample.jpg
+image: /images/post-sample.jpg
 ---
 
 <h2>東京で初めて満員電車に乗り合わせ話</h2>

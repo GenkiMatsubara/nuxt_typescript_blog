@@ -1,7 +1,7 @@
 ---
 title: 人生とは自転車のようなものだ。
 created_at: 2020-03-01
-image: /images/post/sample.jpg
+image: /images/post-sample.jpg
 ---
 
 <h2>人生とは自転車のようなものだ。</h2>
