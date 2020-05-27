@@ -2,24 +2,22 @@
   <header class="header">
     <div class="content">
       <div class="titleContent">
-        <n-link class="link" :to="'/'">
-          <p>Genkiのブログ</p>
+        <n-link class="titleLink" :to="'/'">
+          <p class="pageTitle">Genkiのブログ</p>
         </n-link>
+        <ul class="headerLink">
+          <li>
+            <n-link class="link" :to="'/tech'">
+              <p>▶︎tech</p>
+            </n-link>
+          </li>
+          <li>
+            <n-link class="link" :to="'/life'">
+              <p>▶︎life</p>
+            </n-link>
+          </li>
+        </ul>
       </div>
-      <!-- <div class="boxLink">
-        <n-link class="link" :to="'/tech'">
-          <div style="background:orange" class="box">テック</div>
-        </n-link>
-        <n-link class="link" :to="'/life'">
-          <div style="background:#399cea" class="box">LIFE</div>
-        </n-link>
-        <n-link class="link" :to="'/photo'">
-          <div style="background:#3fcc45" class="box">写真</div>
-        </n-link>
-        <n-link class="link" :to="'/travel'">
-          <div style="background:#e64444" class="box">旅</div>
-        </n-link>
-      </div>-->
     </div>
   </header>
 </template>
@@ -39,8 +37,6 @@ export default {
 .header {
   width: 100%;
   height: auto;
-  // padding-left: 32px;
-  // padding-right: 16px;
   background: #0a58a8;
   color: aliceblue;
   font-size: 2em;
@@ -48,36 +44,43 @@ export default {
   padding-top: 10px;
   padding-bottom: 10px;
   .content {
+    position: relative;
     widows: 100%;
     max-width: 1180px;
     height: 100%;
     margin: 0 auto;
     color: aliceblue;
-  }
-  .boxLink {
-    width: 100%;
-    height: 50px;
-    .box {
-      font-size: 0.5em;
-      float: left;
-      width: 24%;
-      margin-right: 1%;
-      height: 30px;
-      margin-right: 10px;
-      color: white;
-      text-align: center;
+    .titleContent {
+      width: 100%;
+      height: auto;
+      .titleLink {
+        .pageTitle {
+          font-size: 28px;
+          margin-left: 16px;
+          margin-right: 20px;
+          color: aliceblue;
+        }
+      }
+      .headerLink {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        list-style: none;
+        display: flex;
+        p{
+          font-size: 20px;
+          margin-right: 20px;
+          margin-top: 4px;
+          width: fit-content;
+          color: aliceblue;
+        }
+      }
     }
   }
 }
-p {
-  font-size: 36px;
-  margin-left: 16px;
-  margin-right: 20px;
-  color: aliceblue;
-}
-.titleContent {
-  width: 100%;
-  height: 50px;
+p:hover {
+  opacity: 0.7;
 }
 // mobile
 @media screen and (max-width: 974px) {

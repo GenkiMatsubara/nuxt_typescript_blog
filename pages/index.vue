@@ -1,6 +1,6 @@
 <template>
   <PageTemplate>
-    <div class="">
+    <div class="topContent">
       <h2>カテゴリーから探す</h2>
       <Genre />
     </div>
@@ -47,14 +47,10 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-// h2 {
-//   font-size: 32px;
-// }
-// .post {
-//   margin-bottom: 20px;
-//   .postTitle {
-//     font-size: 24px;
-//   }
-// }
+@media (max-width: 974px) {
+  .topContent {
+    padding: 0 16px;
+  }
+}
 </style>
 

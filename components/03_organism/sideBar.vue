@@ -35,13 +35,13 @@ p {
   width: 100%;
   height: 50px;
 }
-// タブ
-@media (max-width: 896px) {
-}
-// SP
-@media (max-width: 480px) {
+
+@media (max-width: 974px) {
   p {
     font-size: 32px;
+  }
+  .sideBarComponent {
+    padding: 0 16px;
   }
 }
 </style>

@@ -1,7 +1,9 @@
 <template>
-  <div class>
+  <div class="pageWrapper">
     <Header />
-    <div class="mainImg" :style="`backgroundImage: url(`+pageTopImg+`)`" alt="トップ画像"></div>
+    <div class="mainImg" :style="`backgroundImage: url(`+pageTopImg+`)`" alt="トップ画像">
+      <div class="mask"></div>
+    </div>
     <div class="main">
       <div class="content">
         <slot />
@@ -43,12 +45,17 @@ export default {
 <style scoped lang="scss">
 .mainImg {
   width: 100%;
-  height: 300px;
+  height: 400px;
   position: sticky;
   position: -webkit-sticky;
   display: inline-block;
   overflow: hidden;
   background-size: cover;
+  .mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
   img {
     margin: 0px;
     width: 100%;
@@ -103,7 +110,7 @@ export default {
   h2 {
     color: #0a58a8;
     font-size: 36px;
-    margin-top: 60px;
+    // margin-top: 60px;
     margin-bottom: 40px;
     position: relative;
     padding: 0.6em;
@@ -189,6 +196,9 @@ export default {
     }
   }
 @media (max-width: 974px) {
+  .pageWrapper {
+    min-width: 320px;
+  }
   h1 {
     font-size: 40px;
     margin-top: 20px;
