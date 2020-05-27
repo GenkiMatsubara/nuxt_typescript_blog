@@ -200,6 +200,10 @@ export default {
       color: black;
     }
   }
+
+  * {
+    font-family: A\+EqpB-游ゴシック体 Pr6N B,sans-serif;
+  }
 @media (max-width: 974px) {
   .pageWrapper {
     min-width: 320px;

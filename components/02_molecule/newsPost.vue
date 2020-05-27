@@ -2,16 +2,7 @@
   <div class="newPost">
     <h2>最新の10記事</h2>
     <div v-for="(item,index) in setAllPostData" :key="index">
-      <nuxt-link :to="setLinke(item)">
-        <div class="post">
-          <div class="postImg" :style="`backgroundImage: url(` + item.image + `)`" :alt="item.title">
-            <div class="postText">
-              <div class="postDate">{{setDate(item.created_at)}}</div>
-              <div class="postTitle">{{item.title}}</div>
-            </div>
-          </div>
-        </div>
-      </nuxt-link>
+      <BlogCard class="post" :blogContentData="item" />
     </div>
   </div>
 </template>
@@ -21,8 +12,10 @@ import techPostList from "@/static/json/tech.json";
 import lifePostList from "@/static/json/life.json";
 import travelPostList from "@/static/json/travel.json";
 import photoPostList from "@/static/json/photo.json";
+import BlogCard from "@/components/02_molecule/blogCard.vue";
 
 export default {
+  components:{BlogCard},
   computed:{
     setAllPostData() {
       let setArray = [];
@@ -74,25 +67,6 @@ export default {
   }
   .post {
     margin-bottom: 20px;
-    .postImg {
-      position: relative;
-      width: 100%;
-      height: 300px;
-      background-size: cover;
-      .postText {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background: #d4d4d4c7;
-        text-align:justify;
-        .postDate {
-          font-size: 16px;
-        }
-        .postTitle {
-          font-size: 24px;
-        }
-      }
-    }
   }
 }
 // mobile
@@ -104,16 +78,6 @@ export default {
     }
     .post {
       margin-bottom: 20px;
-      .postImg {
-        // width: 320px;
-        // height: 320px;
-      }
-      .postDate {
-        font-size: 16px;
-      }
-      .postTitle {
-        font-size: 24px;
-      }
     }
   }
 }
