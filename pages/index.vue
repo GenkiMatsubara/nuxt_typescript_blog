@@ -1,9 +1,7 @@
 <template>
   <PageTemplate>
-    <div class="topContent">
-      <h2>カテゴリーから探す</h2>
-      <Genre />
-    </div>
+    <h2>カテゴリーから探す</h2>
+    <Genre />
   </PageTemplate>
 </template>
 
@@ -48,9 +46,6 @@ export default {
 </script>
 <style scoped lang="scss">
 @media (max-width: 974px) {
-  .topContent {
-    padding: 0 16px;
-  }
 }
 </style>
 

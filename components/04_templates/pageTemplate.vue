@@ -6,7 +6,9 @@
     </div>
     <div class="main">
       <div class="content">
-        <slot />
+        <div class="spPadding">
+          <slot />
+        </div>
       </div>
       <SideBar class="sideBar" />
     </div>
@@ -91,6 +93,9 @@ export default {
     .content {
       width: 100%;
       margin: 0;
+      .spPadding {
+        padding: 0 16px;
+      }
     }
     .sideBar {
       width: 100%;

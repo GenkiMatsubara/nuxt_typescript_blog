@@ -24,9 +24,9 @@
             <li>
               <n-link :to="'/about'">このサイトについて</n-link>
             </li>
-            <li>
+            <!-- <li>
               <n-link :to="'/spine'">アニメーション</n-link>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="colum">

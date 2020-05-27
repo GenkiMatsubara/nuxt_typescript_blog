@@ -1,12 +1,14 @@
 <template>
   <div class="sideBarComponent">
-    <div class="titleContent">
+    <div class="content">
+      <div class="titleContent">
       <n-link class="link" :to="'/'">
         <p>Genkiのブログ</p>
       </n-link>
+      </div>
+      <Cards />
+      <NewsPost />
     </div>
-    <Cards />
-    <NewsPost />
   </div>
 </template>
 
@@ -37,11 +39,13 @@ p {
 }
 
 @media (max-width: 974px) {
-  p {
-    font-size: 32px;
-  }
   .sideBarComponent {
-    padding: 0 16px;
+    .content{
+      padding: 0 16px;
+    }
+    p {
+      font-size: 32px;
+    }
   }
 }
 </style>
