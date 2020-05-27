@@ -4,10 +4,7 @@
     <p class="subtitle">{{ setPageTitle() }}</p>
     <div class="cardContents">
       <div class="categorieCard" v-for="(item, index) in setPageData[1]" :key="index">
-        <nuxt-link tag="div" class="cardContent" :to="setType(item)">
-          <img :src="item.image">
-          <h2>{{item.title}}</h2>
-        </nuxt-link>
+        <BlogCard class="" :blogContentData="item"/>
       </div>
     </div>
   </div>
@@ -18,12 +15,16 @@ import techPostList from "@/static/json/tech.json";
 import lifePostList from "@/static/json/life.json";
 import travelPostList from "@/static/json/travel.json";
 import photoPostList from "@/static/json/photo.json";
+import BlogCard from "@/components/02_molecule/blogCard.vue";
 export default {
   data() {
     return {
       path: this.$route.path,
       pageData: null
     };
+  },
+  components: {
+    BlogCard
   },
   computed: {
     setPageData() {
@@ -97,8 +98,8 @@ export default {
   .cardContents {
     .categorieCard {
       float: left;
-      width: 50%;
-      margin: 30px 0;
+      width: 49%;
+      margin: 30px 1% 30px 0;
       .cardContent {
         padding-right: 16px;
         img {cursor: pointer;}
