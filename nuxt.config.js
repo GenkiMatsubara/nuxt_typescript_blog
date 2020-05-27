@@ -23,6 +23,17 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
+    title: process.env.npm_package_name || '',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { hid: 'content-language', property: 'content-language', content: 'ja' },
+      { hid: 'author', property: 'author', content: 'にわとりtechブログ' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'にわとりtechブログ' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'twitter:card', neme: 'twitter:card', content: "summary_large_image" },
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
@@ -54,6 +65,9 @@ module.exports = {
       './assets/styles/_variables.scss',
     ]
   },
+  router: {
+    base: '/'
+  },
   
   /*
   ** Nuxt.js modules
@@ -78,6 +92,8 @@ module.exports = {
     ]
   },
   generate: {
+    fallback: "404.html",
+    
     routes() {
       let allRoutes = [];
       const techRoutes = techPostData['sourceFileArray'].map(item => {
