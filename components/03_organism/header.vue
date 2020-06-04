@@ -5,7 +5,7 @@
         <n-link class="titleLink" :to="'/'">
           <p class="pageTitle">Genkiのブログ</p>
         </n-link>
-        <ul class="headerLink">
+        <ul class="headerLink pcOnly">
           <li>
             <n-link class="link" :to="'/tech'">
               <p>▶︎tech</p>
@@ -17,6 +17,9 @@
             </n-link>
           </li>
         </ul>
+        <div class="spButton spOnly">
+          ≡
+        </div>
       </div>
     </div>
   </header>
@@ -58,6 +61,8 @@ export default {
           font-size: 28px;
           margin-left: 16px;
           margin-right: 20px;
+          margin-top: 0;
+          margin-bottom: 0;
           color: aliceblue;
         }
       }
@@ -89,6 +94,14 @@ p:hover {
     .content{
       margin-left: 16px;
     }
+  }
+  .spButton {
+    font-size: 28px;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 16px;
+    color: white;
   }
 }
 </style>

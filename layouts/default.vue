@@ -3,6 +3,12 @@
 </template>
 
 <style lang="scss">
+.pcOnly {
+  display: block!important;
+}
+.spOnly {
+  display: none!important;
+}
 a {
   text-decoration: none;
 }
@@ -10,16 +16,20 @@ a {
   font-size: 18px;
   color: #05368e;
 }
-@media (max-width: 896px) {
-  * {
-    font-size: 18px;
-  }
+body {
+  margin: 0;
 }
 
-// SP
-@media (max-width: 480px) {
+// mobile
+@media screen and (max-width: 974px) {
+  .pcOnly {
+    display: none!important;
+  }
+  .spOnly {
+    display: block!important;
+  }
   * {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 </style>
