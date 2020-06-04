@@ -7,7 +7,7 @@ import _6f6c098b from '../layouts/default.vue'
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"catch-up-nuxt","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+  head: {"title":"catch-up-nuxt","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"- nuxt.js - TypeScript - AWS - S3"},{"hid":"content-language","property":"content-language","content":"ja"},{"hid":"author","property":"author","content":"にわとりtechブログ"},{"hid":"og:site_name","property":"og:site_name","content":"にわとりtechブログ"},{"hid":"og:type","property":"og:type","content":"website"},{"hid":"twitter:card","neme":"twitter:card","content":"summary_large_image"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })

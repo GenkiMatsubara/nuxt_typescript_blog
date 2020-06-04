@@ -6,6 +6,7 @@ const _564c2444 = () => interopDefault(import('../pages/about/index.vue' /* webp
 const _0d1b33ba = () => interopDefault(import('../pages/information/index.vue' /* webpackChunkName: "pages/information/index" */))
 const _411079bb = () => interopDefault(import('../pages/life/index.vue' /* webpackChunkName: "pages/life/index" */))
 const _159e16ae = () => interopDefault(import('../pages/photo/index.vue' /* webpackChunkName: "pages/photo/index" */))
+const _7b867d9a = () => interopDefault(import('../pages/spine/index.vue' /* webpackChunkName: "pages/spine/index" */))
 const _3d8bd4d5 = () => interopDefault(import('../pages/tech/index.vue' /* webpackChunkName: "pages/tech/index" */))
 const _2ca7b94e = () => interopDefault(import('../pages/travel/index.vue' /* webpackChunkName: "pages/travel/index" */))
 const _127b9a38 = () => interopDefault(import('../pages/detail/_id.vue' /* webpackChunkName: "pages/detail/_id" */))
@@ -105,6 +106,10 @@ export function createRouter() {
       path: "/photo",
       component: _159e16ae,
       name: "photo"
+    }, {
+      path: "/spine",
+      component: _7b867d9a,
+      name: "spine"
     }, {
       path: "/tech",
       component: _3d8bd4d5,
