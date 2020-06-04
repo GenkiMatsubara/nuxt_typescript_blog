@@ -3,7 +3,7 @@
     <div class="content">
       <div class="titleContent">
       <n-link class="link" :to="'/'">
-        <p>Genkiのブログ</p>
+        <div class="siteTitle">Genkiのブログ</div>
       </n-link>
       </div>
       <Cards />
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-p {
+.siteTitle {
   font-size: 36px;
   margin-right: 20px;
   color: aliceblue;

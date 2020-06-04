@@ -3,17 +3,17 @@
     <div class="content">
       <div class="titleContent">
         <n-link class="titleLink" :to="'/'">
-          <p class="pageTitle">Genkiのブログ</p>
+          <div class="pageTitle">Genkiのブログ</div>
         </n-link>
         <ul class="headerLink pcOnly">
           <li>
             <n-link class="link" :to="'/tech'">
-              <p>▶︎tech</p>
+              <div class="pageLink">▶︎tech</div>
             </n-link>
           </li>
           <li>
             <n-link class="link" :to="'/life'">
-              <p>▶︎life</p>
+              <div class="pageLink">▶︎life</div>
             </n-link>
           </li>
         </ul>
@@ -86,7 +86,7 @@ export default {
         width: 300px;
         list-style: none;
         display: flex;
-        p{
+        .pageLink {
           font-size: 20px;
           margin-right: 20px;
           margin-top: 4px;

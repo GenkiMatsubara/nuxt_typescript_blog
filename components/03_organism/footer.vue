@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="footerTitle">
         <n-link class="link" :to="'/'">
-          <p>Genkiのブログ</p>
+          <div class="siteTitle">Genkiのブログ</div>
         </n-link>
       </div>
       <div class="footrtContents">
@@ -79,7 +79,7 @@ export default {
       ul {
         list-style: none;
       }
-      p {
+      .siteTitle {
         color: white;
       }
       a {
@@ -118,9 +118,6 @@ export default {
         }
         li{
           margin-bottom: 10px;
-        }
-        p {
-          color: white;
         }
         a {
           color: white;

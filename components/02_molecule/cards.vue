@@ -2,30 +2,30 @@
   <div class="cardsComponent">
     <nuxt-link class="card" :to="'/tech'">
       <div style="background:orange" class="box">
-        <p class="card_text_box">
+        <div class="card_text_box">
           <span class="cards_font">テック</span>
-        </p>
+        </div>
       </div>
     </nuxt-link>
     <nuxt-link class="card" :to="'/life'">
       <div style="background:#399cea" class="box">
-        <p class="card_text_box">
+        <div class="card_text_box">
           <span class="cards_font">LIFE</span>
-        </p>
+        </div>
       </div>
     </nuxt-link>
     <nuxt-link class="card" :to="'/photo'">
       <div style="background:#3fcc45" class="box">
-        <p class="card_text_box">
+        <div class="card_text_box">
           <span class="cards_font">写真</span>
-        </p>
+        </div>
       </div>
     </nuxt-link>
     <nuxt-link class="card" :to="'/travel'">
       <div style="background:#e64444" class="box">
-        <p class="card_text_box">
+        <div class="card_text_box">
           <span class="cards_font">旅</span>
-        </p>
+        </div>
       </div>
     </nuxt-link>
   </div>

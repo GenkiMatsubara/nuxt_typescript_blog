@@ -2,8 +2,8 @@
   <div class="content">
     <h2>{{this.contentData.title}}</h2>
     <n-link :to="`/travel/${this.contentData.id}`">
-      <p>{{this.contentData.id}}</p>
-      <p>{{this.contentData.title}}</p>
+      <div>{{this.contentData.id}}</div>
+      <div>{{this.contentData.title}}</div>
       <!-- <setIcon
         :imageId="this.contentData.id"
         :imageType="'icon'"
