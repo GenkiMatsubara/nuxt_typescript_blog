@@ -63,7 +63,7 @@ export default {
     padding: 32px 16px 64px;
     .footerTitle {
       width: 100%;
-      p {
+      .siteTitle {
         color: white;
         font-size: 36px;
         margin-bottom: 20px;
@@ -101,7 +101,7 @@ export default {
     .wrapper {
       .footerTitle {
         width: 100%;
-        p {
+        .siteTitle {
           color: white;
           font-size: 36px;
         }

@@ -11,7 +11,6 @@ export default {
   created() {},
   props: {
     htmlData: {
-      type: Object,
       required: true,
       default: () => {
         return "";
