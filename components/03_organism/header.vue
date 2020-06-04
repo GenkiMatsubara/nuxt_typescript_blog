@@ -71,6 +71,7 @@ export default {
       height: auto;
       .titleLink {
         .pageTitle {
+          width: fit-content;
           font-size: 28px;
           margin-left: 16px;
           margin-right: 20px;
