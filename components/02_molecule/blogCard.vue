@@ -136,7 +136,8 @@ export default {
   }
 }
 .blogCardsComponent:hover {
-  opacity: 0.7;
+  opacity: 0.9;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 @media (max-width: 974px) {
 }

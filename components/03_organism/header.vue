@@ -5,7 +5,7 @@
         <n-link class="titleLink" :to="'/'">
           <div class="pageTitle">Genkiのブログ</div>
         </n-link>
-        <ul class="headerLink pcOnly">
+        <ul class="headerLink">
           <li>
             <n-link class="link" :to="'/tech'">
               <div class="pageLink">▶︎tech</div>
@@ -17,7 +17,7 @@
             </n-link>
           </li>
         </ul>
-        <div class="spButton spOnly" v-on:click="openModal()">
+        <div class="spButton" v-on:click="openModal()">
           ≡
         </div>
         <Modal @close-modal="closeModal()" v-if="showModal" />
@@ -86,7 +86,6 @@ export default {
         right: 0;
         width: 300px;
         list-style: none;
-        display: flex;
         .pageLink {
           font-size: 20px;
           margin-right: 20px;
@@ -98,6 +97,9 @@ export default {
     }
   }
 }
+.headerLink{
+  display: flex;
+}
 p:hover {
   opacity: 0.7;
 }
@@ -105,9 +107,12 @@ p:hover {
 @media screen and (max-width: 974px) {
   .header {
     width: 100%;
-    .content{
+    .content {
       margin-left: 16px;
     }
+  }
+  .headerLink {
+    display: none;
   }
   .spButton {
     font-size: 28px;

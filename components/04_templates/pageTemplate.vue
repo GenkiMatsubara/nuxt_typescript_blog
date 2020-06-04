@@ -118,25 +118,23 @@ export default {
   h2 {
     color: #0a58a8;
     font-size: 36px;
-    // margin-top: 60px;
     margin-bottom: 40px;
     position: inherit;
-    // position: relative;
     padding: 0.6em;
     background: #e0edff;
     padding: 6px 6px 6px 24px;
   }
 
-  h2:after {
-    position: absolute;
-    content: "";
-    top: 100%;
-    left: 30px;
-    border: 15px solid transparent;
-    border-top: 15px solid #e0edff;
-    width: 0;
-    height: 0;
-  }
+  // h2:after {
+  //   position: absolute;
+  //   content: "";
+  //   top: 100%;
+  //   left: 30px;
+  //   border: 15px solid transparent;
+  //   border-top: 15px solid #e0edff;
+  //   width: 0;
+  //   height: 0;
+  // }
   h3 {
     font-size: 24px;
     margin-top: 18px;

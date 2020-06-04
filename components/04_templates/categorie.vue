@@ -98,8 +98,8 @@ export default {
   .cardContents {
     .categorieCard {
       float: left;
-      width: 49%;
-      margin: 30px 1% 30px 0;
+      width: 47%;
+      margin: 30px 3% 30px 0;
       .cardContent {
         padding-right: 16px;
         img {cursor: pointer;}
