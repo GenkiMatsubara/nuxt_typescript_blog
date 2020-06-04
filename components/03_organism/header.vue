@@ -17,22 +17,35 @@
             </n-link>
           </li>
         </ul>
-        <div class="spButton spOnly">
+        <div class="spButton spOnly" v-on:click="openModal()">
           ≡
         </div>
+        <Modal @close-modal="closeModal()" v-if="showModal" />
       </div>
     </div>
   </header>
 </template>
 
 <script>
+import Modal from "@/components/02_molecule/modal.vue";
 export default {
   data() {
     return {
+      showModal:false,
       headerData: "header"
     };
   },
-  created() {}
+  components: {
+    Modal
+  },
+  methods:{
+    openModal(){
+      this.showModal = true;
+    },
+    closeModal(){
+      this.showModal = false;
+    }
+  }
 };
 </script>
 

@@ -39,7 +39,8 @@ export default {
     font-size: 36px;
     margin-top: 60px;
     margin-bottom: 40px;
-    position: relative;
+    // position: relative;
+    position: inherit;
     padding: 0.6em;
     background: #e0edff;
     padding: 6px 6px 6px 24px;

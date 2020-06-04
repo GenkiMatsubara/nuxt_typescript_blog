@@ -48,8 +48,11 @@ export default {
 .mainImg {
   width: 100%;
   height: 400px;
-  position: sticky;
-  position: -webkit-sticky;
+  // position: sticky;
+  // position: -webkit-sticky;
+
+  position: inherit;
+
   display: inline-block;
   overflow: hidden;
   background-size: cover;
@@ -117,7 +120,8 @@ export default {
     font-size: 36px;
     // margin-top: 60px;
     margin-bottom: 40px;
-    position: relative;
+    position: inherit;
+    // position: relative;
     padding: 0.6em;
     background: #e0edff;
     padding: 6px 6px 6px 24px;
