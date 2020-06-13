@@ -138,7 +138,7 @@ export async function setContext(app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"CTF_SPACE_ID":"cosqegoygog2","CTF_CDA_ACCESS_TOKEN":"ZrRq8uIf-ACtPN0sqtqFGboxdJjqSuxZRzJutKXIrhw"}
+      env: {}
     }
     // Only set once
     if (context.req) {
