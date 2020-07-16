@@ -34,14 +34,6 @@ export default {
   methods: {
     readJSON() {}
   },
-  asyncData() {
-    return client.getEntries()
-      .then(entries => {
-        return {
-          posts: entries.items
-        }
-    })
-  }
 };
 </script>
 <style scoped lang="scss">
